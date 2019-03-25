@@ -1,0 +1,104 @@
+<!-- 个人中心页面 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/fonts/iconfont.css">
+    <link rel="stylesheet" href="static/css/myselfForDetail.css">
+    <title>我的</title>
+</head>
+
+<body>
+    <div class="all-for-myself">
+        <div class="header">
+            <div class="name">傅娜</div>
+            <div class="job">苏宁易购·总经理</div>
+            <img src="static/images/avatar2@3x.png" alt="">
+            <i class="iconfont icon-icon_enter"></i>
+        </div>
+        <div class="myself-for-list">
+            <ul>
+                <li class="order">
+                    <div class="myself-for-list-icon"></div>
+                    <div class="myself-for-list-font">订单</div>
+                    <div id="order" class="myself-for-list-arrow"></div>
+                </li>
+                <li class="coupon">
+                    <div class="myself-for-list-icon"></div>
+                    <div class="myself-for-list-font">优惠券</div>
+                    <div id="coupon" class="myself-for-list-arrow"></div>
+                </li>
+                <li class="setting">
+                    <div class="myself-for-list-icon"></div>
+                    <div class="myself-for-list-font">设置</div>
+                    <div id="setting" class="myself-for-list-arrow"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部固定菜单栏 -->
+    <div class="footer" style="position: fixed;z-index: 998;margin-bottom: -2px">
+        <nav>
+            <a id="meeting" href="javascript:;">
+                <span class="iconfont icon-recipe_selected" style="display: none"></span>
+                <span class="iconfont icon-recipe_disabled" style="display: block"></span>
+                <span class="label">约面</span>
+            </a>
+            <a id="videos" href="javascript:;">
+                <span class="iconfont icon-vedio_selected" style="display: none"></span>
+                <span class="iconfont icon-vedio_disabled" style="display: block"></span>
+                <span class="label">视频</span>
+            </a>
+            <a id="mine" href="javascript:;" class="active">
+                <span class="iconfont icon-me_selected" style="display: block"></span>
+                <span class="iconfont icon-me_disabled" style="display: none"></span>
+                <span class="label">我的</span>
+            </a>
+        </nav>
+    </div>
+    <script src="static/js/zepto.min.js"></script>
+    <script>
+        $(function () {
+            $('.header').click(function () {
+                window.location.href = "settingfordetail.html"
+            });
+
+            $('#meeting').click(function () {
+                console.log(this);
+                window.location.href = "index.html"
+            })
+            $('#videos').click(function () {
+                window.location.href = "searchForDetail.html"
+            })
+            $('.order').click(function () {
+                window.location.href = "order.html"
+            })
+            $('.coupon').click(function () {
+                window.location.href = "coupon.html"
+            })
+            $('.setting').click(function () {
+                window.location.href = "settingForDetail.html"
+            })
+            $('.myself-for-exit').click(function () {
+                window.location.href = "nobodyForDetail.html"
+            })
+        })
+        let myselfForListIcon = document.getElementsByClassName("myself-for-list-icon");//取得中间list图标
+        let allForBottomImg = document.getElementsByClassName("all-for-bottom-img"); //底部样式图片
+
+        for (let i = 0; i < myselfForListIcon.length; i++) {
+            myselfForListIcon[i].style.background = 'url("static/images/icon_form' + (i + 1) + '.png") no-repeat';
+            myselfForListIcon[i].style.backgroundSize = "21px 21px";
+        }
+        // 底部图片渲染
+        for (let i = 0; i < allForBottomImg.length; i++) {
+            allForBottomImg[i].style.background = 'url("static/images/icon_disabled' + (i + 1) + '.png") no-repeat';
+            allForBottomImg[i].style.backgroundSize = "21px 21px";
+        }
+    </script>
+</body>
+
+</html>

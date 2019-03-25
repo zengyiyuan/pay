@@ -1,0 +1,43 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    .person{
+        width: 100%;
+        height: 180px;
+        color: #fff;
+        .photo{
+            position: relative;
+            width: 100%;
+            height: 180px;
+            background: url('../images/bg_character@3x.png') no-repeat;
+            background-size: 100% 100%;
+            .info{
+                position: absolute;
+                bottom: 10px;
+                left: 15px;
+                h3.name{
+                    margin: 0;
+                    padding: 0;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .introduction{
+        padding: 15px 15px 30px 15px;
+        color: #666;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

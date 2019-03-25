@@ -1,0 +1,138 @@
+*{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+}
+/* 最外端大盒子 */
+.all-for-index{
+    width: 375px;
+    min-height: 1147px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.image-for-index{
+    height: 200px;
+    position: relative;
+}
+.image-for-index-img-two{
+    position: absolute;
+    left: 165px;
+    top: 67px;
+    cursor: pointer;
+}
+/* 流量显示 */
+.tit-for-index{
+    position: absolute;
+    top: 117px;
+    width: 375px;
+    font-size: 12px;
+    color: #fff;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+}
+/* 文件隐藏video */
+.video-for-index{
+    display: none;
+}
+/* 顶端文字样式 */
+.title-for{
+    width: 375px;
+    height: 44px; 
+}
+.title-solid{
+    width: 375px;
+    height: 1px;
+    background: rgba(244,244,244,1);
+}
+.title-for-one{
+    float: left;
+    margin: 12px 0 11px 98px;
+    cursor: pointer;
+}
+.title-for-two{
+    float: left;
+    margin: 12px 83px 11px 101px;
+    cursor: pointer;
+}
+.title-for-solid-one{
+    position: relative;
+    top: 43px;
+    left: 98px;
+    width: 33px;
+    height: 3px;
+}
+.title-for-solid-two{
+    position: relative;
+    top: 40px;
+    left: 232px;
+    width: 58px;
+    height: 3px;
+}
+/* 鼠标点击变色 */
+.title-for-color{
+    color:#00BCD4;
+}
+.solid-for-color{
+    background:#00BCD4;
+}
+/* 文字内部样式展示文件 */
+.title-for-border{
+    width: 375px;
+    height: 851px;
+    /* border:1px solid red; */
+}
+/* 页面隐藏样式 */
+.title-for-border-visible{
+    display: none;
+}
+
+.title-for-border-top{
+    width: 375px;
+    height: 153px;
+}
+.title-for-border-head{
+    width: 347px;
+    height: 50px;
+    font-size: 18px;
+    color: #333333;
+    margin: 15px 16px 12px 12px;
+}
+.title-for-border-body-false{
+    width: 348px;
+    height: 60px;
+    font-size: 14px;
+    color: #999999;
+    margin: 12px 15px 0 12px;
+}
+.title-for-border-body-true{
+    width: 348px;
+    font-size: 14px;
+    color: #999999;
+    margin: 12px 15px 0 12px;
+}
+/* 底部样式按钮 */  
+.title-for-border-btn{
+    width: 375px;
+}
+.title-for-border-btn-top{
+    width: 12px;
+    height: 8px;
+    background: url(../image/icon_xl.png);
+    cursor: pointer;
+    margin: 9px auto;
+}
+.title-for-border-btn-bottom{
+    width: 12px;
+    height: 8px;
+    background: url(../image/icon_sq.png);
+    cursor: pointer;
+    margin: 9px auto;
+    display: none;
+}
+/* 分界线 */
+.title-for-border-solid{
+    width: 375px;
+    height: 5px;
+    background:rgba(245,245,245,1);
+}

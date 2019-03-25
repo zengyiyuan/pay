@@ -1,0 +1,557 @@
+* {
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #333333;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+/* 最外端大盒子 */
+.all-for-index {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-for-index {
+    width: 100%;
+    height: 200px;
+    background: url("../images/pic_video.png") no-repeat;
+    background-size: 100% 200px;
+    position: relative;
+}
+
+.image-for-index-img-two {
+    position: absolute;
+    left: 45%;
+    top: 67px;
+    cursor: pointer;
+}
+
+/* 流量显示 */
+.tit-for-index {
+    position: absolute;
+    top: 117px;
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+}
+
+#title-for-img {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: 7px;
+    right: 11%;
+    background: url("../images/eye.png") no-repeat;
+    background-size: 12px 10px;
+}
+
+.tit-for-font {
+    width: 30px;
+    height: 14px;
+    font-size: 10px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 8px;
+    right: 2.5%;
+}
+
+/* 文件隐藏video */
+.video-for-index {
+    display: none;
+}
+
+/* 顶端文字样式 */
+.title-for {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.title-for.fixed {
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+    top: 0;
+}
+
+.title-solid {
+    width: 100%;
+    height: 1px;
+    background: rgba(244, 244, 244, 1);
+}
+
+.title-for-one {
+    float: left;
+    margin: 12px 0 11px 28%;
+    cursor: pointer;
+    /* border-bottom: 1px solid #00BCD4; */
+}
+
+.title-for-two {
+    float: right;
+    margin: 12px 28% 11px 0;
+    cursor: pointer;
+}
+
+.title-for-solid-one {
+    position: relative;
+    top: 43px;
+    left: 28%;
+    width: 33px;
+    height: 3px;
+}
+
+.title-for-solid-two {
+    position: absolute;
+    top: 242px;
+    right: 28%;
+    width: 58px;
+    height: 3px;
+}
+
+/* 鼠标点击变色 */
+.title-for-color {
+    color: #00BCD4;
+}
+
+.solid-for-color {
+    background: #00BCD4;
+}
+
+/* 文字内部样式展示文件 */
+.title-for-border {
+    clear: both;
+    width: 100%;
+    height: 870px;
+}
+
+/* 页面隐藏样式 */
+.title-for-border-visible {
+    display: none;
+}
+
+.title-for-border-top {
+    width: 100%;
+    height: 153px;
+}
+
+.title-for-border-head {
+    width: 90%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #333333;
+    margin: 15px 5% 12px;
+}
+
+.title-for-border-body-false {
+    width: 90%;
+    height: 60px;
+    font-size: 14px;
+    color: #999999;
+    margin: 12px 5% 0;
+}
+
+.title-for-border-body-true {
+    width: 90%;
+    font-size: 14px;
+    color: #999999;
+    margin: 12px 5% 0;
+}
+
+/* 底部样式按钮 */
+.title-for-border-btn {
+    width: 100%;
+}
+
+.title-for-border-btn-top {
+    width: 12px;
+    height: 8px;
+    background: url("../images/icon_xl.png") no-repeat;
+    cursor: pointer;
+    margin: 9px auto;
+}
+
+.title-for-border-btn-bottom {
+    width: 12px;
+    height: 8px;
+    background: url("../images/icon_sq.png") no-repeat;
+    cursor: pointer;
+    margin: 9px auto;
+    display: none;
+}
+
+/* 分界线 */
+.title-for-border-solid {
+    width: 100%;
+    height: 5px;
+    background: rgba(245, 245, 245, 1);
+}
+
+/* 中间图层样式 */
+.title-for-middle {
+    width: 100%;
+    height: 678px;
+}
+
+.title-for-middle-head {
+    width: 66px;
+    height: 22px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: #333333;
+    margin: 15px auto 20px;
+}
+
+.title-for-middle-bottom>ul>li {
+    width: 44.3%;
+    height: 156px;
+    float: left;
+    margin-left: 4%;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+/* 底部八张图片 */
+.title-for-middle-div-one {
+    width: 100%;
+    height: 97px;
+    cursor: pointer;
+}
+
+.title-for-middle-div-two {
+    width: 165px;
+    height: 20px;
+    color: #333333;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.title-for-middle-div-three {
+    width: 122px;
+    height: 17px;
+    color: #999999;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+/* 小眼睛图片样式 */
+.title-for-middle-eye {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 79px;
+    left: 72%;
+    background: url("../images/eye.png") no-repeat;
+    background-size: 12px 10px;
+}
+
+.title-for-middle-font {
+    width: 30px;
+    height: 14px;
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    top: 75px;
+    left: 80%;
+}
+
+/* ********************************评论部分********************************** */
+#title-border-two>ul>li {
+    width: 99%;
+    height: 158px;
+    position: relative;
+    background: #fff;
+    padding-left: 2.2%;
+    padding-bottom: 3%;
+}
+
+.title-border-photo {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 17px 0 10px 2%;
+}
+
+.title-border-bottom {
+    width: 90%;
+    height: 1px;
+    margin-left: 15px;
+    position: absolute;
+    top: 158px;
+    background: rgba(244, 244, 244, 1);
+}
+
+.title-border-name {
+    width: 83%;
+    height: 17px;
+    margin: 15px 0 0 6px;
+    float: left;
+    font-size: 12px;
+}
+
+.title-border-about {
+    width: 100px;
+    height: 14px;
+    margin: 1px 0 0 6px;
+    float: left;
+    color: #999999;
+    font-size: 10px;
+}
+
+.title-border-font {
+    clear: both;
+    width: 95%;
+    height: 60px;
+    margin: 3% 0 0 2%;
+    font-size: 14px;
+}
+
+.title-border-time {
+    width: 65px;
+    height: 17px;
+    margin: 10px 0 0 2%;
+    font-size: 12px;
+    float: left;
+    color: #999999;
+}
+
+.title-border-opera {
+    width: 35%;
+    margin: 10px 0 0 73%;
+}
+
+.title-border-opera>div {
+    float: left;
+}
+
+.title-border-opera-font {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 14px 0 2px;
+    color: #999999;
+}
+
+.title-border-opera-left {
+    width: 15px;
+    height: 15px;
+    background: url("../images/icon_comment.png") no-repeat;
+    background-size: 15px 15px;
+}
+
+.title-border-opera-right {
+    width: 15px;
+    height: 15px;
+    line-height: 12px;
+}
+
+/* 底部菜单栏样式 */
+.title-for-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #f5f5f5;
+    background-color: #fff;
+}
+
+.title-for-bottom>ul>li {
+    float: left;
+    width: 22px;
+    height: 38px;
+    margin-left: 20%;
+    margin-top: 7px;
+}
+
+.title-for-bottom-one {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.title-for-bottom-two {
+    width: 70px;
+    height: 14px;
+    margin-left: -20px;
+    color: #333333;
+    font-size: 10px;
+}
+
+/* 评论输入框 */
+.title-for-input {
+    clear: both;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999999;
+    border-top: 1px solid #f5f5f5;
+    background: #ffffff;
+    padding-top: 7px;
+    display: none;
+}
+
+.title-for-input>input {
+    width: 65%;
+    height: 43px;
+    border-style: none;
+    outline: none;
+    margin-left: 15px;
+    background: #e7e7e7;
+    border-radius: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.title-for-input-pen {
+    width: 16px;
+    height: 16px;
+    background: url('../images/icon_reply.png') no-repeat;
+    background-size: 16px 16px;
+    position: absolute;
+    left: 25px;
+    top: 21px;
+}
+
+.title-for-input-face {
+    width: 28px;
+    height: 28px;
+    background: url('../images/emoji.png') no-repeat;
+    background-size: 28px 28px;
+    position: absolute;
+    right: 20%;
+    top: 16px;
+}
+
+.title-for-input-arrow {
+    width: 31px;
+    height: 28px;
+    background: url('../images/icons_send.png') no-repeat;
+    background-size: 31px 28px;
+    position: absolute;
+    right: 15px;
+    top: 16px;
+}
+
+/* 分享 */
+.scroll-hide {
+    overflow: hidden;
+}
+
+.all-for-hide {
+    width: 100%;
+    height: 1300px;
+    background: rgba(1, 1, 1, 0.3);
+    position: absolute;
+    top: 0;
+    z-index: 9999999;
+    display: none;
+}
+
+.all-for-anli {
+    width: 100%;
+    height: 185px;
+    background: #ffffff;
+    position: fixed;
+    bottom: 0;
+}
+
+.all-for-anli-btn {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #f5f5f5;
+    color: #00BCD4;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.all-for-anli-title {
+    width: 55px;
+    height: 21px;
+    font-size: 17px;
+    margin: 10px auto;
+}
+
+.all-for-anli-ul>ul {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+}
+
+.all-for-anli-ul>ul>li {
+    flex: 1;
+    flex-wrap: nowrap;
+}
+
+.all-for-anli-ul-img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.all-for-anli-ul-font {
+    margin-top: 8px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+}
+
+/* 底线 */
+.def {
+    width: 156px;
+    height: 12px;
+    margin: 0px auto;
+    background: url("../images/def_end.png") no-repeat;
+    background-size: 156px 12px;
+}
+
+.iconfont {
+    font-size: 15px;
+    color: #999;
+    margin-right: 3px;
+}
+/* 底部按钮 */
+.all-bottom {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #f5f5f5;
+    background: #fff;
+    display: flex;
+  }
+  .all-bottom .input {
+    flex: 0.8;
+    padding-left: 0;
+    line-height: 50px;
+  }
+  .all-bottom .input img {
+    position: relative;
+    left: 10%;
+    top: 4px;
+  }
+  .all-bottom .input input {
+    width: 80%;
+    height: 36px;
+    outline: none;
+    border-style: none;
+    background: #f4f4f4;
+    border-radius: 16px;
+    padding-left: 10%;
+  }
+  .all-bottom .left,
+  .all-bottom .right {
+    flex: 0.1;
+    text-align: left;
+    line-height: 46px;
+  }

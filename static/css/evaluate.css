@@ -1,0 +1,107 @@
+/* 使用webkit内核的浏览器 */
+/* Firefox版本4-18 */
+/* Firefox版本19+ */
+/* IE浏览器 */
+input,
+textarea {
+  border: 0;
+  /* 方法1 */
+  -webkit-appearance: none;
+  /* 方法2 */
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+html .container img,
+body .container img {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+html .container .evalate-txt,
+body .container .evalate-txt {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+  margin-top: 16px;
+}
+html .container .icon-group,
+body .container .icon-group {
+  margin-top: 12px;
+  text-align: center;
+}
+html .container .icon-group .iconfont,
+body .container .icon-group .iconfont {
+  font-size: 30px;
+  color: #EFEFEF;
+  margin: 0 3.5px;
+}
+html .container .icon-group .icon-icon_star_selected,
+body .container .icon-group .icon-icon_star_selected {
+  color: #00BCD4;
+}
+html .container .textarea-box,
+body .container .textarea-box {
+  position: relative;
+}
+html .container .textarea-box textarea,
+body .container .textarea-box textarea {
+  display: block;
+  width: 84%;
+  height: 100px;
+  resize: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #f4f4f4;
+  padding: 3.5%;
+  outline: none;
+  font-size: 14px;
+}
+html .container .textarea-box textarea::-webkit-input-placeholder,
+body .container .textarea-box textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+html .container .textarea-box textarea::-moz-placeholder,
+body .container .textarea-box textarea::-moz-placeholder {
+  color: #999999;
+}
+html .container .textarea-box textarea:-ms-input-placeholder,
+body .container .textarea-box textarea:-ms-input-placeholder {
+  color: #999999;
+}
+html .container .addpic,
+body .container .addpic {
+  margin-top: 20px;
+  margin-left: 4.2%;
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  border: 1px dashed #f5f5f5;
+  text-align: center;
+}
+html .container .addpic .iconfont,
+body .container .addpic .iconfont {
+  color: #e1e1e1;
+  font-size: 80px;
+}
+html .container .submit,
+body .container .submit {
+  display: block;
+  width: 92%;
+  height: 47px;
+  background-color: #00BCD4;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 24px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 17px;
+}

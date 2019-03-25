@@ -1,0 +1,661 @@
+<!-- 搜索页面 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="static/fonts/iconfont.css">
+    <link rel="stylesheet" href="static/swiper-4.4.6/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/searchForDetail.css">
+    <title>视频</title>
+</head>
+
+<body>
+    <div class="all-for-index">
+        <div class="all-for-top">
+            <!-- 顶端搜索框 -->
+            <!-- <div class="search-for-find">
+                <div class="search-for-img"></div>
+                <div class="search-for-input">搜索约面/视频</div>
+            </div> -->
+            <div class="search">
+                <input class="searchbox " type="text" placeholder="搜索约面/视频">
+                <i class="iconfont icon-bar_icon_search"></i>
+                <span class="cancel" style="display:none">取消</span>
+            </div>
+            <div class="search-mask" style="display: none">
+                <div class="hot">
+                    <h3>热门搜索</h3>
+                    <span>英语</span>
+                    <span>开发</span>
+                    <span>UI</span>
+                    <span>平面设计</span>
+                    <span>视觉设计</span>
+                    <span>华为</span>
+                    <span>小米</span>
+                </div>
+                <div class="history">
+                    <i class="iconfont icon-icon_delete"></i>
+                    <h3>历史搜索</h3>
+                    <span>阿里巴巴</span>
+                    <span>前端</span>
+                    <span>UI设计师</span>
+                    <span>视觉设计</span>
+                    <span>华为</span>
+                    <span>小米</span>
+                    <span>Java</span>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img width="100%;height:120px" src="static/images/vedio_banner1@3x.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="100%;height:120px" src="static/images/vedio_banner2@3x.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="100%;height:120px" src="static/images/vedio_banner3@3x.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="100%;height:120px" src="static/images/vedio_banner4@3x.png" alt="">
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- 顶端导航栏 -->
+            <div class="search-for-navigation">
+                <ul>
+                    <li style="margin-left:3.1%">
+                        <div id="for-one" class="search-for-navigation-font">综合排序</div>
+                        <div class="search-for-navigation-icon"></div>
+                        <div class="search-for-navigation-one search-for" style="left:-10%">
+                            <ul>
+                                <li>综合排序</li>
+                                <li>好评率排序</li>
+                                <li>人气排序</li>
+                                <li>价格最低</li>
+                                <li>价格最高</li>
+                            </ul>
+                        </div>
+                        <div class="search-for-navigation-bottom" style="left:-10%"></div>
+                    </li>
+                    <li>
+                        <div id="for-two" class="search-for-navigation-font">全部视频</div>
+                        <div class="search-for-navigation-icon"></div>
+                        <div class="search-for-navigation-two search-for">
+                            <ul>
+                                <li>&nbsp&nbsp&nbsp&nbsp全部</li>
+                                <li onclick="changeColorForNavTwo(1)" id="navtive">&nbsp&nbsp&nbsp&nbsp公考求职</li>
+                                <li onclick="changeColorForNavTwo(2)">&nbsp&nbsp&nbsp&nbsp法学院</li>
+                                <li onclick="changeColorForNavTwo(3)">&nbsp&nbsp&nbsp&nbsp财会金融</li>
+                                <li onclick="changeColorForNavTwo(4)">&nbsp&nbsp&nbsp&nbsp医疗卫生</li>
+                                <li onclick="changeColorForNavTwo(5)">&nbsp&nbsp&nbsp&nbsp建筑工程</li>
+                                <li onclick="changeColorForNavTwo(6)">&nbsp&nbsp&nbsp&nbsp艺术设计</li>
+                            </ul>
+                            <div class="search-for-navigation-two-menu">
+                                <ul>
+                                    <li></li>
+                                    <li style="display:block">
+                                        <ul>
+                                            <li onclick="ChangeForList(1,0)">全部</li>
+                                            <li onclick="ChangeForList(1,1)">公务员</li>
+                                            <li onclick="ChangeForList(1,2)">事业单位</li>
+                                            <li onclick="ChangeForList(1,3)">教师考试</li>
+                                            <li onclick="ChangeForList(1,4)">金融银行</li>
+                                            <li onclick="ChangeForList(1,5)">企业招聘</li>
+                                            <li onclick="ChangeForList(1,6)">其他招考</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li onclick="ChangeForList(2,0)">全部</li>
+                                            <li onclick="ChangeForList(2,1)">法学求职</li>
+                                            <li onclick="ChangeForList(2,2)">中国政法大学</li>
+                                            <li onclick="ChangeForList(2,3)">政法实时</li>
+                                            <li onclick="ChangeForList(2,4)">法学前景</li>
+                                            <li onclick="ChangeForList(2,5)">法学专业</li>
+                                            <li onclick="ChangeForList(2,6)">知法懂法</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li onclick="ChangeForList(3,0)">全部</li>
+                                            <li onclick="ChangeForList(3,1)">会计师</li>
+                                            <li onclick="ChangeForList(3,2)">财会注册</li>
+                                            <li onclick="ChangeForList(3,3)">会计证书</li>
+                                            <li onclick="ChangeForList(3,4)">在线教程</li>
+                                            <li onclick="ChangeForList(3,5)">会计文稿</li>
+                                            <li onclick="ChangeForList(3,6)">升级图纸</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li onclick="ChangeForList(4,0)">全部</li>
+                                            <li onclick="ChangeForList(4,1)">医学发展</li>
+                                            <li onclick="ChangeForList(4,2)">医学前景</li>
+                                            <li onclick="ChangeForList(4,3)">中国医科大学</li>
+                                            <li onclick="ChangeForList(4,4)">北京协和医学院</li>
+                                            <li onclick="ChangeForList(4,5)">分子勘测</li>
+                                            <li onclick="ChangeForList(4,6)">碰撞治疗</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li onclick="ChangeForList(5,0)">全部</li>
+                                            <li onclick="ChangeForList(5,1)">室内装潢</li>
+                                            <li onclick="ChangeForList(5,2)">室内修理</li>
+                                            <li onclick="ChangeForList(5,3)">土木工程</li>
+                                            <li onclick="ChangeForList(5,4)">家居卫生</li>
+                                            <li onclick="ChangeForList(5,5)">建筑工程</li>
+                                            <li onclick="ChangeForList(5,6)">有毒排查</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li onclick="ChangeForList(6,0)">全部</li>
+                                            <li onclick="ChangeForList(6,1)">中央美术学院</li>
+                                            <li onclick="ChangeForList(6,2)">抽象学</li>
+                                            <li onclick="ChangeForList(6,3)">采集生茶</li>
+                                            <li onclick="ChangeForList(6,4)">艺术鉴赏</li>
+                                            <li onclick="ChangeForList(6,5)">美学美工</li>
+                                            <li onclick="ChangeForList(6,6)">艺体修改</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-for-navigation-bottom" style="left:-115%"></div>
+                    </li>
+                    <li>
+                        <div id="for-three" class="search-for-navigation-font">筛选</div>
+                        <div class="search-for-navigation-icon" style="left:70%"></div>
+                        <div class="search-for-navigation-three search-for">
+                            <div class="search-for-navigation-title">价格区间</div>
+                            <div class="search-for-navigation-money">
+                                <div onclick="changeColorForNavThree(0)" class="search-for-navigation-money-btn search-for-navigation-money-btn-color">免费</div>
+                                <div onclick="changeColorForNavThree(1)" class="search-for-navigation-money-btn">¥50以下</div>
+                                <div onclick="changeColorForNavThree(2)" class="search-for-navigation-money-btn">¥50-100</div>
+                                <div onclick="changeColorForNavThree(3)" class="search-for-navigation-money-btn">¥100-500</div>
+                                <div onclick="changeColorForNavThree(4)" class="search-for-navigation-money-btn">¥500-1000</div>
+                                <div onclick="changeColorForNavThree(5)" class="search-for-navigation-money-btn">¥1000以上</div>
+                                <div class="search-for-navigation-money-range">
+                                    <div class="search-for-navigation-money-start">
+                                        <input class="start" type="text" placeholder="最低价" oninput="value=value.replace(/[^\d]/g,'')">
+                                    </div>
+                                    <div class="search-for-navigation-money-middle">-</div>
+                                    <div class="search-for-navigation-money-end">
+                                        <input class="end" type="text" placeholder="最高价" oninput="value=value.replace(/[^\d]/g,'')">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-for-navigation-head">视频内容包含(可多选)</div>
+                            <div class="search-for-navigation-money">
+                                <div class="search-for-navigation-money-btn-bot">面试资料</div>
+                                <div class="search-for-navigation-money-btn-bot">录播视频</div>
+                                <div class="search-for-navigation-money-btn-bot">试题检测</div>
+                                <div class="search-for-navigation-money-btn-bot">面试技巧</div>
+                                <div class="search-for-navigation-money-btn-bot">名师指导</div>
+                            </div>
+                            <div class="search-for-navigation-three-bottom">
+                                <div class="search-for-navigation-three-bottom-left" onclick="clearForThree()">重置</div>
+                                <div class="search-for-navigation-three-bottom-right">确定</div>
+                            </div>
+                        </div>
+                        <div class="search-for-navigation-bottom" style="left:-220%"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- list列表 -->
+        <div class="search-for-list">
+            <ul>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">面试总是不通过？那…</div>
+                    <div class="search-for-list-font">因为你没看穿这些</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">面试产品经理岗位…</div>
+                    <div class="search-for-list-font">向面试官展现自己</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">面试后雇主不给回音…</div>
+                    <div class="search-for-list-font">因为你没看穿这些</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">面试应答有哪些话…</div>
+                    <div class="search-for-list-font">魔高一尺道高一丈</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">面试的3大雷区</div>
+                    <div class="search-for-list-font">何为面试雷区</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">“经验丰富”的设计师…</div>
+                    <div class="search-for-list-font">竞争力的世界</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">面试总是不通过？那…</div>
+                    <div class="search-for-list-font">因为你没看穿这些</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">面试产品经理岗位…</div>
+                    <div class="search-for-list-font">向面试官展现自己</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">面试后雇主不给回音…</div>
+                    <div class="search-for-list-font">因为你没看穿这些</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">面试应答有哪些话…</div>
+                    <div class="search-for-list-font">魔高一尺道高一丈</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">面试的3大雷区</div>
+                    <div class="search-for-list-font">何为面试雷区</div>
+                </li>
+                <li>
+                    <div class="search-for-list-img">
+                        <div class="search-for-list-icon"></div>
+                        <div class="search-for-list-count">1.2万</div>
+                    </div>
+                    <div class="search-for-list-head">“经验丰富”的设计师…</div>
+                    <div class="search-for-list-font">竞争力的世界</div>
+                </li>
+            </ul>
+        </div>
+        <div style="width:100%;height:80px;background: #f5f5f5;padding-top: 15px">
+            <div class="def"></div>
+        </div>
+    </div>
+    <div class="footer" style="position: fixed;z-index: 998;margin-bottom: -2px">
+        <nav>
+            <a id="meeting" href="javascript:;">
+                <span class="iconfont icon-recipe_selected" style="display: none"></span>
+                <span class="iconfont icon-recipe_disabled" style="display: block"></span>
+                <span class="label">约面</span>
+            </a>
+            <a id="videos" href="javascript:;" class="active">
+                <span class="iconfont icon-vedio_selected" style="display: block"></span>
+                <span class="iconfont icon-vedio_disabled" style="display: none"></span>
+                <span class="label">视频</span>
+            </a>
+            <a id="mine" href="javascript:;">
+                <span class="iconfont icon-me_selected" style="display: none"></span>
+                <span class="iconfont icon-me_disabled" style="display: block"></span>
+                <span class="label">我的</span>
+            </a>
+        </nav>
+    </div>
+    <script src="static/js/zepto.min.js"></script>
+    <script src="static/swiper-4.4.6/dist/js/swiper.min.js"></script>
+    <script>
+        $(function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                loop: true, // 循环模式选项
+
+                // 如果需要分页器
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // 如果需要滚动条
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            })
+
+            $('#meeting').click(function () {
+                console.log(this);
+                window.location.href = "index.html"
+            })
+            $('#mine').click(function () {
+                window.location.href = "myselfForDetail.html"
+            })
+            $('.icon-icon_delete').click(function () {
+                $('.history').find('span').remove()
+            })
+            $('.footer>nav a').click(function () {
+                $(this).addClass('active').siblings().removeClass('active')
+                $(this).find('.iconfont:nth-child(1)').css('display', 'block')
+                $(this).find('.iconfont:nth-child(2)').css('display', 'none')
+                $(this).siblings().find('.iconfont:nth-child(1)').css('display', 'none')
+                $(this).siblings().find('.iconfont:nth-child(2)').css('display', 'block')
+            })
+            $('.searchbox').focus(function () {
+                $(this).addClass('searchbox-active')
+                $('.icon-bar_icon_search').addClass('active')
+                $('.cancel').show()
+                $('.search-mask').show()
+                $('.selected-box').hide()
+                $('.content-box').hide()
+                $('.footer').hide()
+                $('html').css('background-color', '#fff')
+                $('.selected-mask').hide()
+                $('.selected-box span').removeClass('active')
+                $('.swiper-container').hide()
+                $('.search-for-navigation').hide()
+                $('.search-for-list').hide()
+            })
+            $('.selected-box>span').click(function () {
+                $('.selected-mask .all .letter li').removeClass('active')
+                $('.selected-mask .job div').removeClass('active')
+                $('.selected-mask .content span').removeClass('active')
+                $('.filter .content .condition span:first-of-type').addClass('active')
+                $('.swiper-container').hide()
+                $('.selected-mask').on('click', function (e) {
+                    $('.selected-mask').hide();
+                    $('.selected-mask .all .letter li').removeClass('active')
+                    $('.selected-mask .job div').removeClass('active')
+                    $('.selected-mask .content span').removeClass('active')
+                    $('.selected-box>span').removeClass('active')
+                    $('.swiper-container').show()
+                    $('body').removeClass('flow')
+                });
+                $('.selected-mask .all').on('click', function (e) {
+                    e.stopPropagation();
+                });
+                $('.selected-mask .job').on('click', function (e) {
+                    e.stopPropagation();
+                });
+                $('.selected-mask .filter').on('click', function (e) {
+                    e.stopPropagation();
+                });
+
+                var className = this.classList[0]
+                console.log(this.classList[1])
+                if (!this.classList[1]) { //此筛选条件未选中状态
+                    $(this).addClass('active').siblings().removeClass('active')
+                    $('.selected-mask').show()
+                    $('.selected-mask .' + className).show().siblings().hide()
+                    $('.swiper-container').hide()
+                    $('body').addClass('flow')
+                } else if (this.classList[1] == 'active') { //此筛选条件选中状态
+                    $(this).removeClass('active')
+                    $('.selected-mask').hide()
+                    $('.selected-mask .' + className).hide()
+                    $('.swiper-container').show()
+                    $('body').removeClass('flow')
+                }
+            })
+            $('.cancel').click(function () {
+                $('.searchbox').removeClass('searchbox-active')
+                $('.icon-bar_icon_search').removeClass('active')
+                $(this).toggle()
+                $('.search-mask').hide()
+                $('.selected-box').show()
+                $('.content-box').show()
+                $('.footer').show()
+                $('.swiper-container').show()
+                $('.search-for-navigation').show()
+                $('.search-for-list').show()
+            })
+            $('.icon-bar_icon_search').click(function () {
+                $('.search-mask').hide()
+                $('.searchbox').addClass('searchbox-active')
+                $('.cancel').show();
+                $('.selected-box').show()
+                $('.content-box').show()
+                $('.footer').hide()
+            })
+            $('.search-for-list-img').click(function () {
+                window.location.href = "videoes.html"
+            })
+
+        })
+
+        // 导航
+        $('.search-for-navigation-font').click(function () {
+            if ($(this).attr('flag') == 'true') {
+                // *****************************
+                $(this).siblings('.search-for').css('display', 'none');
+                $(this).siblings('.search-for-navigation-bottom').css('display', 'none');
+                $(this).siblings('.search-for-navigation-icon').css('background',
+                    'url("static/images/icon_drop@3x.png")');
+                $('.search-for-navigation-icon').css('backgroundSize',
+                    '8px 5px');
+                $(this).attr('flag', false).css('color', '#333333');
+                $('body').css('overflow', 'visible');
+            } else {
+                // *****************************
+                $(this).siblings('.search-for').css('display', 'block').parent().siblings('li').children(
+                    '.search-for').css('display', 'none');
+                $(this).siblings('.search-for-navigation-icon').css('background',
+                    'url("static/images/icon_drop_active.png")').parent().siblings('li').children(
+                    '.search-for-navigation-icon').css('background',
+                    'url("static/images/icon_drop@3x.png")');
+                $('.search-for-navigation-icon').css('backgroundSize',
+                    '8px 5px');
+                $(this).siblings('.search-for-navigation-bottom').css('display', 'block').parent().siblings(
+                    'li').children('.search-for-navigation-bottom').css('display', 'none');
+                $(this).attr('flag', true).css('color', '#00BCD4').parent().siblings('li').children(
+                    '.search-for-navigation-font').attr('flag', false).css('color', '#333333');
+                $('body').css('overflow', 'hidden');
+                $('.search-for-navigation-font,.search-for-navigation-bottom').bind("touchmove", function (e) {
+                    e.preventDefault();
+                });
+            }
+
+        });
+        // 综合排序变色
+        $('.search-for-navigation-one ul li').click(function () {
+            $(this).css('color', '#00BCD4').siblings('li').css('color', '#333333');
+        });
+        // 页面赋初值
+        $('#for-one').click(function () {
+            if ($('#for-one').attr('flag') == 'true') {
+                $('.search-for-navigation-one ul li').css('color', '#333333');
+                $('.search-for-navigation').addClass('position');
+            } else {
+                $('.search-for-navigation').removeClass('position');
+            }
+
+        });
+        $('#for-two').click(function () {
+            if ($('#for-two').attr('flag') == 'true') {
+                $($('.search-for-navigation-two ul').find("ul li").get(1)).css('color', '#00BCD4').siblings(
+                    'li').css(
+                    'color', '#333333');
+                $($('.search-for-navigation-two ul').find("ul li").get(1)).css('borderLeft',
+                    '3px solid #00BCD4').siblings(
+                    'li').css('borderLeft', '3px solid #ffffff');
+                $($('.search-for-navigation-two-menu ul').find("ul li").get(1)).css('display', 'block').siblings(
+                    'li').css(
+                    'display', 'none');
+                $('.search-for-navigation').addClass('position');
+            } else {
+                $('.search-for-navigation').removeClass('position');
+            }
+        });
+        $('#for-three').click(function () {
+            if ($('#for-three').attr('flag') == 'true') {
+                $($('.search-for-navigation-money-btn').get(0)).addClass(
+                    'search-for-navigation-money-btn-color').siblings(
+                    '.search-for-navigation-money-btn').removeClass('search-for-navigation-money-btn-color');
+                $('.start').val('');
+                $('.end').val('');
+                $('.search-for-navigation-money-btn-bot').removeClass('color');
+                $('.search-for-navigation').addClass('position');
+            } else {
+                $('.search-for-navigation').removeClass('position');
+            }
+        });
+        // 筛选页面多选
+        $('.search-for-navigation-money-btn-bot').click(function () {
+            if ($(this).attr('flag') == 'true') {
+                $(this).removeClass('color').attr('flag', false);
+            } else {
+                $(this).addClass('color').attr('flag', true);
+            }
+        });
+        //点击遮罩层导航隐藏
+        $('.search-for-navigation-bottom').click(function () {
+            $('.search-for-navigation-font').attr('flag', false).css('color', '#333333');
+            $('.search-for-navigation-icon').css('background',
+                'url("static/images/icon_drop@3x.png")');
+            $('.search-for-navigation-icon').css('backgroundSize',
+                '8px 5px');
+            $('.search-for').css('display', 'none');
+            $('.search-for-navigation-bottom').css('display', 'none');
+            $('.search-for-navigation').removeClass('position');
+            $('body').css('overflow', 'visible');
+        });
+        let searchForInput = document.getElementsByClassName("search-for-input")[0]; //获取输入框
+        let searchForListImg = document.getElementsByClassName("search-for-list-img"); //获取所有文字图片
+        let searchForNavigationFont = document.getElementsByClassName("search-for-navigation-font"); //获取导航栏文字元素
+        let searchForNavigationIcon = document.getElementsByClassName("search-for-navigation-icon"); //获取导航栏小图标
+        let searchForNavigationOne = document.getElementsByClassName("search-for-navigation-one")[0]; //第一个导航下拉框
+        let searchForNavigationTwo = document.getElementsByClassName("search-for-navigation-two")[0]; //第二个导航下拉框
+        let searchForNavigationTwoMenu = document.getElementsByClassName("search-for-navigation-two-menu")[0]; //第二个导航下拉框菜单栏
+        let searchForNavigationThree = document.getElementsByClassName("search-for-navigation-three")[0]; //第三个导航下拉框
+        let searchForNavigationBottom = document.getElementsByClassName("search-for-navigation-bottom")[0]; //导航下拉框隐藏
+        let searchForNavigationMoneyBtn = document.getElementsByClassName("search-for-navigation-money-btn"); //取得第三个tab页样式
+        let searchForNavigationMoneyBtnBot = document.getElementsByClassName(
+            "search-for-navigation-money-btn-bot"); //取得第三个tab页视频样式
+        let allForBottomImg = document.getElementsByClassName("all-for-bottom-img"); //底部样式图片
+        let start = document.getElementsByClassName("start")[0];
+        let end = document.getElementsByClassName("end")[0];
+        let body = document.getElementsByTagName('body')[0];
+        let changeForBtnBot = true;
+
+        for (let i = 0; i < searchForListImg.length; i++) {
+            searchForListImg[i].style.background = 'url("static/images/video' + (i + 1) + '.png") no-repeat';
+            searchForListImg[i].style.backgroundSize = "100% 97px";
+        }
+        // 底部图片渲染
+        for (let i = 0; i < allForBottomImg.length; i++) {
+            allForBottomImg[i].style.background = 'url("static/images/icon_disabled' + (i + 1) +
+                '.png") no-repeat';
+            allForBottomImg[i].style.backgroundSize = "21px 21px";
+        }
+        /**
+         * @description 清空搜索框数据
+         * @author heaihua 043434
+         * @param
+         * @return
+         */
+        function clearSearch() {
+            searchForInput.value = "";
+        }
+        /**
+         * @description 列表选中变色,且切换tab页
+         * @author heaihua 043434
+         * @param
+         * @return
+         */
+        function changeColorForNavTwo(flag) {
+            for (let i = 0; i < searchForNavigationTwo.children[0].children.length; i++) {
+                searchForNavigationTwo.children[0].children[i].style.color = "#333333";
+                searchForNavigationTwo.children[0].children[i].style.borderLeft = "3px solid #ffffff";
+                searchForNavigationTwoMenu.children[0].children[i].style.display = "none";
+            }
+            searchForNavigationTwo.children[0].children[flag].style.color = "#00BCD4";
+            searchForNavigationTwo.children[0].children[flag].style.borderLeft = "3px solid #00BCD4";
+            searchForNavigationTwoMenu.children[0].children[flag].style.display = "block";
+        }
+        /**
+         * @description 详情内部变色
+         * @author heaihua 043434
+         * @param
+         * @return
+         */
+        function ChangeForList(ul, flag) {
+            for (let i = 0; i < searchForNavigationTwoMenu.children[0].children[ul].children[0].children.length; i++) {
+                searchForNavigationTwoMenu.children[0].children[ul].children[0].children[i].style.color =
+                    "#333333";
+            }
+            searchForNavigationTwoMenu.children[0].children[ul].children[0].children[flag].style.color =
+                "#00BCD4";
+        }
+        /**
+         * @description 第三个tab页切换
+         * @author heaihua 043434
+         * @param
+         * @return
+         */
+        function changeColorForNavThree(flag) {
+            for (let i = 0; i < searchForNavigationMoneyBtn.length; i++) {
+                searchForNavigationMoneyBtn[i].className = "search-for-navigation-money-btn";
+            }
+            searchForNavigationMoneyBtn[flag].className += " search-for-navigation-money-btn-color";
+        }
+        /**
+         * @description 清空第三个tab页数据
+         * @author heaihua 043434
+         * @param
+         * @return
+         */
+        function clearForThree() {
+            start.value = "";
+            end.value = "";
+            for (let i = 0; i < searchForNavigationMoneyBtn.length; i++) {
+                if (i === 0) {
+                    searchForNavigationMoneyBtn[i].className =
+                        "search-for-navigation-money-btn search-for-navigation-money-btn-color";
+                } else {
+                    searchForNavigationMoneyBtn[i].className = "search-for-navigation-money-btn";
+                }
+            }
+            for (let i = 0; i < searchForNavigationMoneyBtnBot.length; i++) {
+                searchForNavigationMoneyBtnBot[i].className = "search-for-navigation-money-btn-bot";
+            }
+        }
+    </script>
+</body>
+
+</html>

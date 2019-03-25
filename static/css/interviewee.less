@@ -1,0 +1,82 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .person {
+  width: 100%;
+  height: 180px;
+  color: #fff;
+}
+.container .person .photo {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background: url('../images/bg_zy@3x.png') no-repeat;
+  background-size: 100% 100%;
+}
+.container .person .photo .info {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+.container .person .photo .info h3.name {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+.container .introduction {
+  padding: 15px 15px 30px 15px;
+  color: #333;
+  font-size: 14px;
+  .summary{
+      h3{
+          font-size: 16px;
+          margin: 0;
+          margin-bottom: 12px;
+      }
+      .content{
+          line-height: 17px;
+      }
+  }
+  .experience{
+      h3{
+          font-size: 16px;
+          margin: 0;
+          margin-top: 20px;
+      }
+      .content{
+          .box{
+              margin-top: 15px;
+              h3{
+                  margin: 0;
+                  font-size: 12px;
+                  font-weight: normal;
+
+              }
+              .info{
+                  color: #999;
+                  margin-bottom: 10px;
+                  .time{
+                      float: right;
+                  }
+              }
+              .detail{
+                line-height: 17px;
+              }
+          }
+      }
+  }
+}

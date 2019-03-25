@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>付费观摩</title>
+    <link rel="stylesheet" href="static/fonts/iconfont.css">
+    <link rel="stylesheet" href="static/css/watch.css">
+</head>
+
+<body>
+    <div class="banner">
+        <button class="paid-button" style="width:150px;">¥180 付费观摩</button>
+        <img src="static/images/banner_yms@3x.png" alt="">
+        <span class="views">
+            <i class="iconfont icon-icon_paly"></i>1.2万
+        </span>
+    </div>
+    <div class="title-for">
+        <div id="title-one" class="title-for-one title-for-color" onclick="titleChangeColor(1)">详情</div>
+        <div id="title-two" class="title-for-two" onclick="titleChangeColor(2)">评论391</div>
+        <div id="solid-one" class="title-for-solid-one solid-for-color"></div>
+        <div id="solid-two" class="title-for-solid-two"></div>
+    </div>
+    <div id="detail-box" style="display: block">
+        <div class="card-box">
+            <div class="content">
+                <div class="left-person">
+                    <div class="head-box">
+                        <image class="photo" style="width: 58px; vertical-align: middle;" src="static/images/avatar1@3x.png">
+                        </image>
+                    </div>
+                    <span>韩超</span>
+                    <h3 class="info">华为主管</h3>
+                </div>
+                <div class="center">
+                    <div>
+                        <image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">
+                        </image>
+                        <span class="info">前端工程师</span>
+                    </div>
+                </div>
+                <div class="right-person">
+                    <div class="head-box right">
+                        <image src="static/images/avatar2@3x.png" style="width: 58px;vertical-align:middle;">
+                        </image>
+                    </div>
+                    <span>唐秀英</span>
+                    <h3 class="info">毕业生</h3>
+                </div>
+            </div>
+            <div class="ad">
+                <a href="">
+                    面试总是不通过？那是因为你没看穿这些真相！这个视频教你拿到offer
+                </a>
+            </div>
+        </div>
+        <div class="process">
+            <h3>面试流程</h3>
+            <div>1. 30分钟自我介绍及面试官真实面试</div>
+            <div>2. 30分钟自我介绍及面试官真实面试</div>
+            <div>3. 30分钟自我介绍及面试官真实面试</div>
+            <div>4. 30分钟自我介绍及面试官真实面试</div>
+        </div>
+        <div class="estimate">
+            <h3>面试官评语</h3>
+            <div>
+                整体表达能力较好，思路清晰，但是业务基础不够扎实，产品经理需要的工具使用上不够熟练，在这块需要加强。作为公司的角度：建议录用！
+            </div>
+        </div>
+        <h2>相关约面</h2>
+        <div class="card-box introduce first">
+            <span class="viewer">6980想看</span>
+            <div class="content">
+                <div class="left-person">
+                    <div class="head-box">
+                        <image class="photo" style="width: 58px; vertical-align: middle;" src="static/images/avatar1@3x.png">
+                        </image>
+                    </div>
+                    <span>韩超</span>
+                    <h3 class="info">华为主管</h3>
+                </div>
+                <div class="center">
+                    <div>
+                        <image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">
+                        </image>
+                        <span class="info">前端工程师</span>
+                    </div>
+                    <button>观摩</button>
+                </div>
+                <div class="right-person">
+                    <div class="head-box right">
+                        <image src="static/images/avatar2@3x.png" style="width: 58px;vertical-align:middle;">
+                        </image>
+                    </div>
+                    <span>唐秀英</span>
+                    <h3 class="info">毕业生</h3>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="tips">
+                        面试｜ “经验丰富”的设计师，真的更有优势么？
+                </span>
+            </div>
+        </div>
+        <div class="card-box higher introduce" data-status="paid">
+            <span class="viewer">6980想看</span>
+            <div class="content">
+                <div class="left-person">
+                    <div class="head-box">
+                        <image class="photo" style="width: 58px; vertical-align: middle;" src="static/images/ym_avatar3@3x.png">
+                        </image>
+                    </div>
+                    <span>罗涛</span>
+                    <h3 class="info">焦点科技股份有限公司运营总监</h3>
+                </div>
+                <div class="center">
+                    <div>
+                        <image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">
+                        </image>
+                        <span class="info">前端工程师</span>
+                    </div>
+                    <button>观摩</button>
+                </div>
+                <div class="right-person">
+                    <div class="head-box right">
+                        <image src="static/images/ym_avata4@3x.png" style="width: 58px;vertical-align:middle;">
+                        </image>
+                    </div>
+                    <span>蔡刚</span>
+                    <h3 class="info">毕业生</h3>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="tips">
+                        面试前需要做的3个环节：建立面试标准、挖掘岗位关键信息、面试
+                </span>
+            </div>
+        </div>
+        <div class="card-box introduce">
+            <span class="viewer">6980想看</span>
+            <div class="content">
+                <div class="left-person">
+                    <div class="head-box">
+                        <image class="photo" style="width: 58px; vertical-align: middle;" src="static/images/ym_avata5@3x.png">
+                        </image>
+                    </div>
+                    <span>万艳</span>
+                    <h3 class="info">华为主管</h3>
+                </div>
+                <div class="center">
+                    <div>
+                        <image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">
+                        </image>
+                        <span class="info">前端工程师</span>
+                    </div>
+                    <button>观摩</button>
+                </div>
+                <div class="right-person">
+                    <div class="head-box right">
+                        <image src="static/images/ym_avatar6@3x.png" style="width: 58px;vertical-align:middle;">
+                        </image>
+                    </div>
+                    <span>范敏</span>
+                    <h3 class="info">毕业生</h3>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="tips">
+                        面试套路三步曲：如何用产品思维搞定面试
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="comments-box" style="display:none">
+        <div class="comment-box">
+            <div class="comment-box-head">
+                <div class="head-image">
+                    <img src="static/images/yms_img_avatar@3x.png" alt="">
+                    <span>彭杰</span>
+                    <h3>华为总经理</h3>
+                </div>
+            </div>
+            <div class="comment-box-content">
+                增加抗压能力，交际能力、一些细节上的工作处理。一 细节，不能想当然的去做任务，到后来所有辛苦的结果 会付诸东流，所以在做任务之前，多与领导交流。
+            </div>
+            <div class="comment-box-footer">
+                <span class="time">上午8:15</span>
+                <div>
+                    <div class="agree">
+                        <i class="iconfont icon-icon_praise"></i>
+                        <span class="agree-num">236</span>
+                    </div>
+                    <div class="reply">
+                        <i class="iconfont icon-icon_comment"></i>
+                        <span class="reply-num">236</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-box">
+            <div class="comment-box-head">
+                <div class="head-image">
+                    <img src="static/images/img_xq_avatar@3x.png" alt="">
+                    <span>顾秀英</span>
+                    <h3>南京苏宁总经理</h3>
+                </div>
+            </div>
+            <div class="comment-box-content">
+                    在市场上属于第一梯队。未来3-5年将全力实现数字化 华为，并以云服务方式帮助企业实现数字化。以数字化 型为牵引，加大云计算、物联网、大数据等新兴领域
+            </div>
+            <div class="comment-box-footer">
+                <span class="time">3天前</span>
+                <div>
+                    <div class="agree">
+                        <i class="iconfont icon-icon_praise"></i>
+                        <span class="agree-num">236</span>
+                    </div>
+                    <div class="reply">
+                        <i class="iconfont icon-icon_comment"></i>
+                        <span class="reply-num">236</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-box">
+            <div class="comment-box-head">
+                <div class="head-image">
+                    <img src="static/images/img_xq_avatar@3x (1).png" alt="">
+                    <span>康杰</span>
+                    <h3>华为总经理</h3>
+                </div>
+            </div>
+            <div class="comment-box-content">
+                    Ant Design是一个服务于企业级产品的设计体系，基于 『确定』和『自然』的设计价值观和模块化的解决方案， 让设计者专注于更好的用户体验。
+            </div>
+            <div class="comment-box-footer">
+                <span class="time">2018-11-11</span>
+                <div>
+                    <div class="agree">
+                        <i class="iconfont icon-icon_praise"></i>
+                        <span class="agree-num">109</span>
+                    </div>
+                    <div class="reply">
+                        <i class="iconfont icon-icon_comment"></i>
+                        <span class="reply-num">899</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-box">
+            <div class="comment-box-head">
+                <div class="head-image">
+                    <img src="static/images/img_xq_avatar@3x (2).png" alt="">
+                    <span>周娟</span>
+                    <h3>容南京苏宁总经理</h3>
+                </div>
+            </div>
+            <div class="comment-box-content">
+                    机会很多，很锻炼人，薪酬也不多，工作环境好。考评 本公正，多劳多得。就是加班多，更适合应届生。社招 果需要照顾家庭的，建议不要考虑了。
+            </div>
+            <div class="comment-box-footer">
+                <span class="time">2018-4-5</span>
+                <div>
+                    <div class="agree">
+                        <i class="iconfont icon-icon_praise"></i>
+                        <span class="agree-num">1024</span>
+                    </div>
+                    <div class="reply">
+                        <i class="iconfont icon-icon_comment"></i>
+                        <span class="reply-num">236</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-box">
+                <div class="comment-box-head">
+                    <div class="head-image">
+                        <img src="static/images/img_xq_avatar@3x (3).png" alt="">
+                        <span>袁军</span>
+                        <h3>南京苏宁总经理</h3>
+                    </div>
+                </div>
+                <div class="comment-box-content">
+                        在市场上属于第一梯队。未来3-5年将全力实现数字化 华为，并以云服务方式帮助企业实现数字化。以数字化 型为牵引，加大云计算、物联网、大数据等新兴领域
+                </div>
+                <div class="comment-box-footer">
+                    <span class="time">2018-12-12</span>
+                    <div>
+                        <div class="agree">
+                            <i class="iconfont icon-icon_praise"></i>
+                            <span class="agree-num">236</span>
+                        </div>
+                        <div class="reply">
+                            <i class="iconfont icon-icon_comment"></i>
+                            <span class="reply-num">236</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-box">
+                    <div class="comment-box-head">
+                        <div class="head-image">
+                            <img src="static/images/img_xq_avatar@3x (4).png" alt="">
+                            <span>谭秀英</span>
+                            <h3>华为总经理</h3>
+                        </div>
+                    </div>
+                    <div class="comment-box-content">
+                            语雀是一款优雅高效的在线文档编辑与协同工具， 让每 个企业轻松拥有文档中心阿里巴巴集团内部使用多年， 众多中小企业首选。
+                    </div>
+                    <div class="comment-box-footer">
+                        <span class="time">2018-3-8</span>
+                        <div>
+                            <div class="agree">
+                                <i class="iconfont icon-icon_praise"></i>
+                                <span class="agree-num">109</span>
+                            </div>
+                            <div class="reply">
+                                <i class="iconfont icon-icon_comment"></i>
+                                <span class="reply-num">899</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+</body>
+<script src="static/js/zepto.min.js"></script>
+<script src="static/js/watch.js"></script>
+
+</html>

@@ -1,0 +1,362 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .header{
+        width: 100%;
+        height: 44px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-around;
+        a{
+            position: relative;
+            line-height: 42px;
+            display: inline-block;
+            text-decoration: none;
+            color: #333333;
+            font-size: 16px;
+            span{
+                visibility: hidden;
+                position: absolute;
+                display: inline-block;
+                width: 20px;
+                height: 4px;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 2px;
+                background-color: #00BCD4;
+            }
+        }
+        a.active{
+            color:#00BCD4;
+            span{
+                visibility: visible;
+                background-color: #00BCD4;
+            }
+        }
+    }
+    .blank{
+       position: relative;
+       text-align: center;
+       img{
+           width: 150px;
+           display: block;
+           margin-left: 50%;
+           transform: translateX(-50%);
+           margin-top: 122px;
+       }
+       p{
+           font-size: 14px;
+           color: #ddd;
+       }
+    }
+    .not-used{
+        .coupon-box{
+            margin: 0 auto;
+            width: 92%;
+            height: 94px;
+            margin-top: 20px;
+            background-color: #fff;
+            display: flex;
+            border-radius: 4px 4px 4px 4px;
+            box-shadow: 0px 2px 4px rgba(216,216,216,0.5);
+            .left{
+                position: relative;
+                width: 27%;
+                height: 100%;
+                display: inline-block;
+                text-align: center;
+                span.num{
+                    display: inline-block;
+                    font-size: 40px;
+                    color: #00BCD4;
+                    font-weight: 700;
+                    margin-top: 13px;
+                    em{
+                        font-style: normal;
+                        font-size: 12px;
+                        font-weight: normal;
+                        margin-left: -5px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .left::before{
+                content:'';
+                position: absolute;
+                width: 2px;
+                height: 96px;
+                background-color: transparent;
+                border-right: 1px dashed #E1E1E1;
+                right: 1px;
+            }
+            .left::after{
+                content:'';
+                position: absolute;
+                width: 4px;
+                height: 100%;
+                background-color: #00BCD4;
+                border-radius: 4px 0px 0px 4px;
+                left: 0px;
+                top: 0;
+            }
+            .center{
+                position: relative;
+                width: 55%;
+                height: 100%;
+                display: inline-block;
+                padding-left: 8%;
+                .title{
+                    margin-top: 20px;
+                    font-size: 16px;
+                    color: #333;
+                }
+                .time{
+                    color: #999;
+                    font-size: 12px;
+                    margin-top: 18px;
+                }
+            }
+            .center::before{
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #F4F4F4;
+                left: 0;
+                top: 0;
+                z-index: 999;
+                transform: translate(-62%,-50%);
+                box-shadow: 0px -1px 0px rgba(216,216,216,0.5) inset; 
+            }
+            .center::after{
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #F4F4F4;
+                left: 0;
+                bottom: 0;
+                z-index: 999;
+                transform: translate(-62%,49%);
+            }
+            .use-coupon{
+                margin: 0;
+                flex: 1;
+                height: 100%;
+                display: inline-block;
+                outline: none;
+                border: none;
+                border-radius: 0 4px 4px 0;
+                background-color: #00BCD4;
+                color: #fff;
+                font-size: 14px;
+            }
+    
+        }
+        .coupon-box.first{
+            margin-top: 64px;
+        }
+    }
+    .used{
+        .coupon-box{
+            margin: 0 auto;
+            width: 92%;
+            height: 94px;
+            margin-top: 20px;
+            background-color: #fff;
+            display: flex;
+            border-radius: 4px 4px 4px 4px;
+            box-shadow: 0px 2px 4px rgba(216,216,216,0.5);
+            .left{
+                position: relative;
+                width: 86.3%;
+                height: 100%;
+                display: inline-block;
+                text-align: center;
+                padding-left: 3.7%;
+                .title,.time{
+                    text-align: left;
+                }
+                .title{
+                    font-size: 16px;
+                    color: #333;
+                    margin-top: 17px;
+                }
+                .time{
+                    font-size: 12px;
+                    color: #999;
+                    margin-top: 15px;
+                }
+                .solid{
+                    position: absolute;
+                    width: 4px;
+                    height: 100%;
+                    background-color: #00BCD4;
+                    border-radius: 4px 0px 0px 4px;
+                    left: 0px;
+                    top: 0;
+                }
+            }
+            .left::before{
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #F4F4F4;
+                left: 29.6%;
+                top: 0;
+                z-index: 999;
+                transform: translate(-50%,-50%);
+                box-shadow: 0px -1px 0px rgba(216,216,216,0.5) inset; 
+            }
+            .left::after{
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #F4F4F4;
+                left: 29.5%;
+                bottom: 0;
+                z-index: 999;
+                transform: translate(-50%,50%);
+            }
+            .continue-watch{
+                margin: 0;
+                flex: 1;
+                height: 100%;
+                display: inline-block;
+                outline: none;
+                border: none;
+                border-radius: 0 4px 4px 0;
+                background-color: #00BCD4;
+                color: #fff;
+                font-size: 14px;
+            }
+    
+        }
+        .coupon-box.finished{
+            .left{
+                width: 100%;
+                img{
+                    width: 10.6%;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0
+                }
+            }
+            .left::before, .left::after{
+                left: 26.6%;
+            }
+        }
+        .coupon-box.first{
+            margin-top: 64px;
+            .left{
+                .time{
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    .overdue{
+        .coupon-box{
+            margin: 0 auto;
+            width: 92%;
+            height: 94px;
+            margin-top: 20px;
+            background-color: #fff;
+            display: flex;
+            border-radius: 4px 4px 4px 4px;
+            box-shadow: 0px 2px 4px rgba(216,216,216,0.5);
+            .left{
+                position: relative;
+                width: 86.3%;
+                height: 100%;
+                display: inline-block;
+                text-align: center;
+                padding-left: 3.7%;
+                .title,.time{
+                    text-align: left;
+                }
+                .title{
+                    font-size: 16px;
+                    color: #333;
+                    margin-top: 17px;
+                }
+                .time{
+                    font-size: 12px;
+                    color: #999;
+                    margin-top: 15px;
+                }
+                .solid{
+                    position: absolute;
+                    width: 4px;
+                    height: 100%;
+                    background-color: #00BCD4;
+                    border-radius: 4px 0px 0px 4px;
+                    left: 0px;
+                    top: 0;
+                }
+            }
+            .left::before{
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #F4F4F4;
+                left: 29.5%;
+                top: 0;
+                z-index: 999;
+                transform: translate(-50%,-50%);
+                box-shadow: 0px -1px 0px rgba(216,216,216,0.5) inset; 
+            }
+            .left::after{
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #F4F4F4;
+                left: 29.5%;
+                bottom: 0;
+                z-index: 999;
+                transform: translate(-50%,50%);
+            }
+        }
+        .coupon-box.finished{
+            .left{
+                width: 100%;
+                img{
+                    width: 10.6%;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0
+                }
+            }
+            .left::before, .left::after{
+                left: 26.5%;
+            }
+        }
+        .coupon-box.first{
+            margin-top: 64px;
+        }
+    }
+}

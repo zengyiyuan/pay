@@ -1,0 +1,61 @@
+* {
+    font-size: 17px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #333333;
+    outline: none;
+    border:none;
+} 
+
+body{
+    width: 100%;
+    background: rgba(245,245,245,1);
+}
+.all-for-setting{
+    width: 100%;
+    background: rgba(245,245,245,1);
+}
+.all-for-head{
+    width: 100%;
+    height: 61px;
+    padding-top: 43px;
+    background: #ffffff;
+}
+.all-for-head-font,.all-for-name-master{
+    width: 35px;
+    height: 21px;
+    margin: 0 0 0 18px;
+}
+.all-for-head-img{
+    width: 64px;
+    height: 64px;
+    float: right;
+    background: url("../images/img_avatar.png") no-repeat;
+    background-size: 64px 64px;
+    margin-top: -40px;
+    margin-right: 9.6%;
+}
+.all-for-head-arrow{
+    width: 8px;
+    height: 12px;
+    float: right;
+    background: url("../images/icon_enter.png") no-repeat;
+    background-size: 8px 12px;
+    margin-top: -15px;
+    margin-right: 4%;
+}
+.all-for-name{
+    width: 100%;
+    height: 36px;
+    padding-top: 15px; 
+    background: #ffffff;
+    border-top: 1px solid rgba(245,245,245,1);
+}
+.all-for-name-assistant{
+    width: 35px;
+    height: 21px;
+    color: #999999;
+    float: right;
+    margin: -22px 9.6% 0 0;
+}

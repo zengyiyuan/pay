@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable"> <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>职芽</title>
+	<link rel="stylesheet" href="static/fonts/iconfont.css">
+	<link rel="stylesheet" href="static/swiper-4.4.6/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+	<header>
+		<div class="search"> 
+			<input class="searchbox " type="text" placeholder="搜索约面/视频">
+			<i class="iconfont icon-bar_icon_search"></i>
+			<span class="cancel" style="display:none">取消</span>
+		</div>
+		<div class="search-mask" style="display: none">
+			<div class="hot">
+				<h3>热门搜索</h3>
+				<span>英语</span>
+				<span>开发</span>
+				<span>UI</span>
+				<span>平面设计</span>
+				<span>视觉设计</span>
+				<span>华为</span>
+				<span>小米</span>
+			</div>
+			<div class="history">
+				<i class="iconfont icon-icon_delete"></i>
+				<h3>历史搜索</h3>
+				<span>阿里巴巴</span>
+				<span>前端</span>
+				<span>UI设计师</span>
+				<span>视觉设计</span>
+				<span>华为</span>
+				<span>小米</span>
+				<span>Java</span>
+			</div>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img style="display:block" width="100%;height:120px" src="static/images/banner1@3x.png" alt=""></div>
+				<div class="swiper-slide"><img style="display:block" width="100%;height:120px" src="static/images/banner2@2x.png" alt=""></div>
+				<div class="swiper-slide"><img style="display:block" width="100%;height:120px" src="static/images/banner3@3x.png" alt=""></div>
+				<div class="swiper-slide"><img style="display:block" width="100%;height:120px" src="static/images/banne4@3x.png" alt=""></div>
+			</div>
+
+			<div class="swiper-pagination">
+
+			</div>
+		</div>
+		<div class="selected-box">
+			<span class="all">全部<span class="icon"></span></span>
+			<span class="job">行业职业<span class="icon"></span></span>
+			<span class="filter">筛选<span class="icon"></span>
+		</div>
+		</div>
+	</header>
+	<div class="selected-mask" style="z-index: 999;display: none">
+		<div class="all" style="display: none">
+				<div class="city">
+					<div class="city-list">
+						<h3>全部</h3>
+						<span class="city-letter" id="A">A</span>
+						<p data-id="210300">阿克苏式</p>
+						<p data-id="152900">安阳</p>
+						<p data-id="340800">安乡</p>
+						<p data-id="410500">安新县</p>
+						<p data-id="542500">安义县</p>
+						<p data-id="610900">安远县</p>
+						<p data-id="520400">安泽县</p>
+						<p data-id="513200">鞍山</p>
+					</div>
+					<div class="city-list">
+						<span class="city-letter" id="B">B</span>
+						<p data-id="220800">白城市</p>
+						<p data-id="150200">包头市</p>
+						<p data-id="150800">巴彦淖尔市</p>
+						<p data-id="130600">保定市</p>
+						<p data-id="210500">本溪市</p>
+						<p data-id="220600">白山市</p>
+						<p data-id="341600">亳州市</p>
+						<p data-id="340300">蚌埠市</p>
+						<p data-id="371600">滨州市</p>
+						<p data-id="620400">白银市</p>
+						<p data-id="610300">宝鸡市</p>
+						<p data-id="530500">保山市</p>
+						<p data-id="451000">百色市</p>
+						<p data-id="522401">毕节市</p>
+						<p data-id="450500">北海市</p>
+						<p data-id="511900">巴中市</p>
+						<p data-id="110100">北京市</p>
+					</div>
+				</div>
+				<div class="letter">
+						<ul>
+						  <li><a href="javascript:;">A</a></li>
+						  <li><a href="javascript:;">B</a></li>
+						  <li><a href="javascript:;">C</a></li>
+						  <li><a href="javascript:;">D</a></li>
+						  <li><a href="javascript:;">E</a></li>
+						  <li><a href="javascript:;">F</a></li>
+						  <li><a href="javascript:;">G</a></li>
+						  <li><a href="javascript:;">H</a></li>
+						  <li><a href="javascript:;">J</a></li>
+						  <li><a href="javascript:;">K</a></li>
+						  <li><a href="javascript:;">L</a></li>
+						  <li><a href="javascript:;">M</a></li>
+						  <li><a href="javascript:;">N</a></li>
+						  <li><a href="javascript:;">P</a></li>
+						  <li><a href="javascript:;">Q</a></li>
+						  <li><a href="javascript:;">R</a></li>
+						  <li><a href="javascript:;">S</a></li>
+						  <li><a href="javascript:;">T</a></li>
+						  <li><a href="javascript:;">W</a></li>
+						  <li><a href="javascript:;">X</a></li>
+						  <li><a href="javascript:;">Y</a></li>
+						  <li><a href="javascript:;">Z</a></li>
+						</ul>
+				</div>
+		</div>
+		
+		<div class="job" style="display: none">
+			<div class="content">
+				<div class="level-one">
+					<div class="level-one-list">
+						<div class="one">全部</div>
+						<div class="two">运营</div>
+						<div class="three">市场</div>
+						<div class="four">技术</div>
+						<div class="five">教育培训</div>
+						<div class="six">金融</div>
+						<div class="seven">设计</div>
+					</div>
+				</div>
+				<div class="level-two">
+					<div class="one" style="display: none">
+							<div class="one">税务审计</div>
+							<div class="two">投融资</div>
+							<div class="three">银行</div>
+							<div class="four">互联网金融</div>
+							<div class="five">风控</div>
+							<div class="six">证券</div>
+							<div class="seven">保险</div>
+					</div>
+					<div class="two" style="display:none">
+						<div>2</div>
+					</div>	
+					<div class="three" style="display:none">
+						<div>3</div>
+					</div>	
+					<div class="four" style="display:none">
+						<div>4</div>
+					</div>	
+					<div class="five" style="display:none">
+						<div>5</div>
+					</div>	
+					<div class="six" style="display:none">
+						<div>6</div>
+					</div>	
+					<div class="seven" style="display:none">
+						<div>7</div>
+					</div>	
+				</div>
+				<div class="level-three">
+					<div class="one" style="display: none">
+							<div>会计</div>
+							<div>审计</div>
+							<div>法务</div>
+							<div>清算</div>
+					</div>
+					<div class="two" style="display: none">
+						<div>2</div>
+					</div>
+					<div class="three" style="display: none">
+						<div>3</div>
+					</div>
+					<div class="four" style="display: none">
+						<div>4</div>
+					</div>
+					<div class="five" style="display: none">
+						<div>5</div>
+					</div>
+					<div class="six" style="display: none">
+						<div>6</div>
+					<div class="seven" style="display: none">
+						<div>7</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="reset">
+			<span>重置</span>
+		</div>
+		</div>
+		<div class="filter" style="display: none">
+			<div class="content">
+				<div class="condition one">
+					<h3>是否付费</h3>
+					<span class="active">不限</span>
+					<span>免费</span>
+					<span>付费</span>
+				</div>
+				<div class="condition two">
+						<h3>是否开始</h3>
+						<span class="active">未开始</span>
+						<span>进行中</span>
+						<span>已完成</span>
+				</div>
+				<div class="condition three">
+						<h3>是否开始</h3>
+						<span class="active">一天</span>
+						<span>三天</span>
+						<span>一周</span>
+						<span>一月</span>
+				</div>
+			</div>
+			<div class="operate">
+				<div class="reset">
+					<span>重置</span>
+				</div>
+				<div class="confirm">
+					<span>确定</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-box">
+			<div class="card-box">
+				<span class="viewer">6980想看</span>
+				<div class="content">
+					<div class="left-person">
+						<div class="head-box">
+							<image class="photo" style="width:58px;vertical-align:middle;" src="static/images/avatar1@3x.png">	
+							</image>
+						</div>
+						<span>韩超</span>
+						<h3 class="info">华为主管</h3>
+					</div>
+					<div class="center">
+							<div>
+							<image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">	
+							</image>
+							<span class="info">前端工程师</span>
+							</div>
+							<button>观摩</button>	
+					</div>
+					<div class="right-person">
+						<div class="head-box right">
+							<image src="static/images/avatar2@3x.png" style="width: 58px;vertical-align:middle;">
+							</image>
+						</div>
+						<span>唐秀英</span>
+						<h3 class="info">毕业生</h3>
+					</div>
+				</div>
+				<div class="footer">
+					<span class="tips">
+							面试｜ “经验丰富”的设计师，真的更有优势么？
+							
+					</span>
+				</div>
+			</div>
+			<div class="card-box higher" data-status="paid">
+				<span class="viewer">6980想看</span>
+				<div class="content">
+						<div class="left-person">
+								<div class="head-box">
+									<image class="photo" style="width: 58px; vertical-align: middle;" src="static/images/ym_avatar3@3x.png">	
+									</image>
+								</div>
+								<span>罗涛</span>
+								<h3 class="info">焦点科技股份有限公司运营总监</h3>
+							</div>
+							<div class="center">
+									<div>
+									<image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">	
+									</image>
+									<span class="info">前端工程师</span>
+									</div>
+									<button>观摩</button>	
+							</div>
+							<div class="right-person">
+								<div class="head-box right">
+									<image src="static/images/ym_avata4@3x.png" style="width: 58px;vertical-align:middle;">
+									</image>
+								</div>
+								<span>蔡刚</span>
+								<h3 class="info">毕业生</h3>
+							</div>
+				</div>
+				<div class="footer">
+						<span class="tips">
+								面试前需要做的3个环节：建立面试标准、挖掘岗位关键信息、面试
+							</span>
+				</div>
+			</div>
+			<div class="card-box">
+					<span class="viewer" style="background-image: url('static/images/home_ic_watching@3x.png')">1890观看</span>
+					<div class="content">
+							<div class="left-person">
+									<div class="head-box">
+										<image class="photo" style="width: 58px; vertical-align: middle;" src="static/images/ym_avata5@3x.png">	
+										</image>
+									</div>
+									<span>万艳</span>
+									<h3 class="info">华为主管</h3>
+								</div>
+								<div class="center">
+										<div>
+										<image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">	
+										</image>
+										<span class="info">前端工程师</span>
+										</div>
+										<button>观摩</button>	
+								</div>
+								<div class="right-person">
+									<div class="head-box right">
+										<image src="static/images/ym_avatar6@3x.png" style="width: 58px;vertical-align:middle;">
+										</image>
+									</div>
+									<span>范敏</span>
+									<h3 class="info">毕业生</h3>
+								</div>
+					</div>
+					<div class="footer">
+							<span class="tips">
+									面试技巧：总有那么一些敲门砖特别好用
+								</span>
+					</div>
+			</div>
+			<div class="card-box">
+					<span class="viewer" style="background-image: url('static/images/home_ic_watching@3x.png')">1890观看</span>
+					<div class="content">
+							<div class="left-person">
+									<div class="head-box">
+										<image class="photo" style="width: 58px; vertical-align: middle;" src="static/images/ym_avata5@3x.png">	
+										</image>
+									</div>
+									<span>万艳</span>
+									<h3 class="info">华为主管</h3>
+								</div>
+								<div class="center">
+										<div>
+										<image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">	
+										</image>
+										<span class="info">前端工程师</span>
+										</div>
+										<button>观摩</button>	
+								</div>
+								<div class="right-person">
+									<div class="head-box right">
+										<image src="static/images/ym_avatar6@3x.png" style="width: 58px;vertical-align:middle;">
+										</image>
+									</div>
+									<span>范敏</span>
+									<h3 class="info">毕业生</h3>
+								</div>
+					</div>
+					<div class="footer">
+							<span class="tips">
+									面试技巧：总有那么一些敲门砖特别好用
+								</span>
+					</div>
+			</div>
+			<div class="card-box">
+					<span class="viewer" style="background-image: url('static/images/home_ic_watching@3x.png')">1890观看</span>
+					<div class="content">
+							<div class="left-person">
+									<div class="head-box">
+										<image class="photo" style="width: 58px; vertical-align: middle;" src="static/images/ym_avata5@3x.png">	
+										</image>
+									</div>
+									<span>万艳</span>
+									<h3 class="info">华为主管</h3>
+								</div>
+								<div class="center">
+										<div>
+										<image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">	
+										</image>
+										<span class="info">前端工程师</span>
+										</div>
+										<button>观摩</button>	
+								</div>
+								<div class="right-person">
+									<div class="head-box right">
+										<image src="static/images/ym_avatar6@3x.png" style="width: 58px;vertical-align:middle;">
+										</image>
+									</div>
+									<span>范敏</span>
+									<h3 class="info">毕业生</h3>
+								</div>
+					</div>
+					<div class="footer">
+							<span class="tips">
+									面试技巧：总有那么一些敲门砖特别好用
+								</span>
+					</div>
+			</div>
+			<!-- <div class="card-box">
+					<span class="viewer" style="background-image: url('static/images/home_ic_watching@3x.png')">1890观看</span>
+					<div class="content">
+							<div class="left-person">
+									<div class="head-box">
+										<image class="photo" style="width: 58px; vertical-align: middle;" src="static/images/avatar1@3x.png">	
+										</image>
+									</div>
+									<span>韩超</span>
+									<h3 class="info">华为主管</h3>
+								</div>
+								<div class="center">
+										<div>
+										<image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">	
+										</image>
+										<span class="info">前端工程师</span>
+										</div>
+										<button>观摩</button>	
+								</div>
+								<div class="right-person">
+									<div class="head-box right">
+										<image src="static/images/avatar2@3x.png" style="width: 58px;vertical-align:middle;">
+										</image>
+									</div>
+									<span>唐秀英</span>
+									<h3 class="info">毕业生</h3>
+								</div>
+					</div>
+					<div class="footer">
+							<span class="tips">
+									面试套路三步曲：如何用产品思维搞定面试
+								</span>
+					</div>
+			</div>
+			<div class="card-box">
+					<span class="viewer" style="background-image: url('static/images/home_ic_watching@3x.png')">1890观看</span>
+					<div class="content">
+							<div class="left-person">
+									<div class="head-box">
+										<image class="photo" style="width: 58px; vertical-align: middle;" src="static/images/avatar1@3x.png">	
+										</image>
+									</div>
+									<span>韩超</span>
+									<h3 class="info">华为主管</h3>
+								</div>
+								<div class="center">
+										<div>
+										<image class="" src="static/images/recipe@2x.png" style="width:54px;display: block">	
+										</image>
+										<span class="info">前端工程师</span>
+										</div>
+										<button>观摩</button>	
+								</div>
+								<div class="right-person">
+									<div class="head-box right">
+										<image src="static/images/avatar2@3x.png" style="width: 58px;vertical-align:middle;">
+										</image>
+									</div>
+									<span>唐秀英</span>
+									<h3 class="info">毕业生</h3>
+								</div>
+					</div>
+					<div class="footer">
+							<span class="tips">
+									面试套路三步曲：如何用产品思维搞定面试
+								</span>
+					</div>
+			</div> -->
+			<div style="width:100%;height:30px;background: #f5f5f5;padding-top: 15px">
+					<div class="def"></div>
+			</div>
+	</div>
+	
+	<div class="footer" style="position: fixed;z-index: 998;margin-bottom: -1px">
+			<nav>
+					<a id="meeting" href="javascript:;" class="active">
+						<span class="iconfont icon-recipe_selected" style="display: block"></span>
+						<span class="iconfont icon-recipe_disabled" style="display: none"></span>
+						<span class="label">约面</span>
+					</a>
+					<a id="videos" href="javascript:;">
+						<span class="iconfont icon-vedio_selected" style="display: none"></span>
+						<span class="iconfont icon-vedio_disabled" style="display: block"></span>
+						<span class="label">视频</span>
+					</a>
+					<a id="mine" href="javascript:;">
+						<span class="iconfont icon-me_selected" style="display: none"></span>
+						<span class="iconfont icon-me_disabled" style="display: block"></span>
+						<span class="label">我的</span>
+					</a>
+			</nav>
+	</div>
+</body>
+<script src="static/js/zepto.min.js"></script>
+<script src="static/swiper-4.4.6/dist/js/swiper.min.js"></script>
+<script src="static/js/index.js"></script>
+</html>

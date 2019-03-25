@@ -1,0 +1,539 @@
+<!-- 搜索详情页 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/css/videoes.css">
+    <link rel="stylesheet" href="static/fonts/iconfont.css">
+    <script src="static/js/zepto.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <title>视频</title>
+</head>
+
+<body>
+    <div class="all-for-index">
+        <div class="image-for-index">
+            <img class="image-for-index-img-two" onclick="btnStartForIndexClick()" src="static/images/btn_play.png" alt="按钮">
+            <div class="tit-for-index">本次播放将消耗22.5M流量</div>
+            <div id="title-for-img"></div>
+            <div class="tit-for-font">1.6万</div>
+        </div>
+        <video class="video-for-index" src="static/video/59b6bb1098e51.mp4" width="100%" height="200" controls="controls"></video>
+        <div class="title-for">
+            <div id="title-one" class="title-for-one title-for-color" onclick="titleChangeColor(1)">详情</div>
+            <div id="title-two" class="title-for-two" onclick="titleChangeColor(2)">评论391</div>
+            <div id="solid-one" class="title-for-solid-one solid-for-color"></div>
+            <div id="solid-two" class="title-for-solid-two"></div>
+        </div>
+        <div class="title-solid"></div>
+        <!-- 文字底部展示 -->
+        <div id="title-border-one" class="title-for-border">
+            <div class="title-for-border-top">
+                <div class="title-for-border-head">
+                    面试总是不通过？那是因为你没看穿这些真相，这个视频教你拿到offer
+                </div>
+                <div id="title-for-false" class="title-for-border-body-false">
+                    在找工作或者跳槽的时候，面试就成了很多人找到好工作的绊脚石，那为什么面试总是通不过？可能因为你没看穿这些真相。 又到金三银四，胖友们想跳槽的心又...
+                </div>
+                <div id="title-for-true" class="title-for-border-body-true title-for-border-visible">
+                    在找工作或者跳槽的时候，面试就成了很多人找到好工作的绊脚石，那为什么面试总是通不过？可能因为你没看穿这些真相。 又到金三银四，胖友们想跳槽的心又
+                    在找工作或者跳槽的时候，面试就成了很多人找到好工作的绊脚石，那为什么面试总是通不过？可能因为你没看穿这些真相。 又到金三银四，胖友们想跳槽的心又
+                    在找工作或者跳槽的时候，面试就成了很多人找到好工作的绊脚石，那为什么面试总是通不过？可能因为你没看穿这些真相。 又到金三银四，胖友们想跳槽的心又
+                </div>
+                <div class="title-for-border-btn">
+                    <div class="title-for-border-btn-top" onclick="btnVisable(true)"></div>
+                    <div class="title-for-border-btn-bottom" onclick="btnVisable(false)"></div>
+                </div>
+                <!-- 分界线 -->
+                <div class="title-for-border-solid"></div>
+                <div class="title-for-middle">
+                    <div class="title-for-middle-head">相关推荐</div>
+                    <div class="title-for-middle-bottom">
+                        <ul id="title-for-middle-ul">
+                            <li>
+                                <div class="title-for-middle-div-one">
+                                    <div class="title-for-middle-eye"></div>
+                                    <div class="title-for-middle-font">1.2万</div>
+                                </div>
+                                <div class="title-for-middle-div-two">
+                                    面试后雇主不给回音的5…
+                                </div>
+                                <div class="title-for-middle-div-three">
+                                    因为你没看穿这些真相
+                                </div>
+                            </li>
+                            <li style="margin-left: 11px;">
+                                <div class="title-for-middle-div-one">
+                                    <div class="title-for-middle-eye"></div>
+                                    <div class="title-for-middle-font">1.2万</div>
+                                </div>
+                                <div class="title-for-middle-div-two">
+                                    面试应答有哪些话术和…
+                                </div>
+                                <div class="title-for-middle-div-three">
+                                    魔高一尺道高一丈
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-for-middle-div-one">
+                                    <div class="title-for-middle-eye"></div>
+                                    <div class="title-for-middle-font">1.2万</div>
+                                </div>
+                                <div class="title-for-middle-div-two">
+                                    面试的3大雷区
+                                </div>
+                                <div class="title-for-middle-div-three">
+                                    何为面试雷区
+                                </div>
+                            </li>
+                            <li style="margin-left: 11px;">
+                                <div class="title-for-middle-div-one">
+                                    <div class="title-for-middle-eye"></div>
+                                    <div class="title-for-middle-font">1.2万</div>
+                                </div>
+                                <div class="title-for-middle-div-two">
+                                    “经验丰富”的设计师…
+                                </div>
+                                <div class="title-for-middle-div-three">
+                                    竞争力的世界
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-for-middle-div-one">
+                                    <div class="title-for-middle-eye"></div>
+                                    <div class="title-for-middle-font">1.2万</div>
+                                </div>
+                                <div class="title-for-middle-div-two">
+                                    面试后台产品经理应该…
+                                </div>
+                                <div class="title-for-middle-div-three">
+                                    公司的标配
+                                </div>
+                            </li>
+                            <li style="margin-left: 11px;">
+                                <div class="title-for-middle-div-one">
+                                    <div class="title-for-middle-eye"></div>
+                                    <div class="title-for-middle-font">1.2万</div>
+                                </div>
+                                <div class="title-for-middle-div-two">
+                                    面试的时候如何谈薪酬…
+                                </div>
+                                <div class="title-for-middle-div-three">
+                                    薪酬待遇
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-for-middle-div-one">
+                                    <div class="title-for-middle-eye"></div>
+                                    <div class="title-for-middle-font">1.2万</div>
+                                </div>
+                                <div class="title-for-middle-div-two">
+                                    面试技巧：总有那么一…
+                                </div>
+                                <div class="title-for-middle-div-three">
+                                    一些敲门砖特别好用
+                                </div>
+                            </li>
+                            <li style="margin-left: 11px;">
+                                <div class="title-for-middle-div-one">
+                                    <div class="title-for-middle-eye"></div>
+                                    <div class="title-for-middle-font">1.2万</div>
+                                </div>
+                                <div class="title-for-middle-div-two">
+                                    面试时如何评估应聘者…
+                                </div>
+                                <div class="title-for-middle-div-three">
+                                    应聘者的软技能
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ********************************* 评论部分 *************************************** -->
+        <div id="title-border-two" class="title-for-border title-for-border-visible">
+            <ul>
+                <li>
+                    <div class="title-border-photo"></div>
+                    <div class="title-border-name">彭杰</div>
+                    <div class="title-border-about">华为总经理</div>
+                    <div class="title-border-font">
+                        细节，不能想当然的去做任务，到后来所有辛苦的结果 会付诸东流，
+                        所以在做任务之前，多与领导交流，不能想当然的去做任务…
+                    </div>
+                    <div class="title-border-time">上午8:15</div>
+                    <div class="title-border-opera">
+                        <div class="title-border-opera-left"></div>
+                        <div class="title-border-opera-font">236</div>
+                        <div class="title-border-opera-right"><i class="iconfont icon-icon_praise"></i></div>
+                        <div class="title-border-opera-font ok">236</div>
+                    </div>
+                    <div class="title-border-bottom"></div>
+                </li>
+                <li>
+                    <div class="title-border-photo"></div>
+                    <div class="title-border-name">顾秀英</div>
+                    <div class="title-border-about">南京苏宁总经理</div>
+                    <div class="title-border-font">
+                        未来3-5年将全力实现数字化 华为，并以云服务方式帮助企业实现数字化。以数字化 型为牵引，加大
+                        云计算、物联网、大数据等…
+                    </div>
+                    <div class="title-border-time">3天前</div>
+                    <div class="title-border-opera">
+                        <div class="title-border-opera-left"></div>
+                        <div class="title-border-opera-font">236</div>
+                        <div class="title-border-opera-right"><i class="iconfont icon-icon_praise"></i></div>
+                        <div class="title-border-opera-font ok">236</div>
+                    </div>
+                    <div class="title-border-bottom"></div>
+                </li>
+                <li>
+                    <div class="title-border-photo"></div>
+                    <div class="title-border-name">康杰</div>
+                    <div class="title-border-about">华为总经理</div>
+                    <div class="title-border-font">
+                        Ant Design是一个服务于企业级产品的设计体系，基于确定和自然的设计价值观和模块化的解决方案， 让设计..
+                    </div>
+                    <div class="title-border-time">2018-11-11</div>
+                    <div class="title-border-opera">
+                        <div class="title-border-opera-left"></div>
+                        <div class="title-border-opera-font">236</div>
+                        <div class="title-border-opera-right"><i class="iconfont icon-icon_praise"></i></div>
+                        <div class="title-border-opera-font ok">236</div>
+                    </div>
+                    <div class="title-border-bottom"></div>
+                </li>
+                <li>
+                    <div class="title-border-photo"></div>
+                    <div class="title-border-name">周娟</div>
+                    <div class="title-border-about">南京苏宁总经理</div>
+                    <div class="title-border-font">
+                        机会很多，工作环境好。考评 本公正，多劳多得。就是加班多，更适合应届生。社招 果需要照顾家庭的，建议不要考虑了。
+                    </div>
+                    <div class="title-border-time">2018-4-5</div>
+                    <div class="title-border-opera">
+                        <div class="title-border-opera-left"></div>
+                        <div class="title-border-opera-font">236</div>
+                        <div class="title-border-opera-right"><i class="iconfont icon-icon_praise"></i></div>
+                        <div class="title-border-opera-font ok">236</div>
+                    </div>
+                    <div class="title-border-bottom"></div>
+                </li>
+                <li>
+                    <div class="title-border-photo"></div>
+                    <div class="title-border-name">袁军</div>
+                    <div class="title-border-about">南京苏宁总经理</div>
+                    <div class="title-border-font">
+                        在市场上属于第一梯队。未来3-5年将全力实现数字化 华为。以数字化 型为牵引，加大云计算、物联网、大数据等新兴领域…
+                    </div>
+                    <div class="title-border-time">2018-12-12</div>
+                    <div class="title-border-opera">
+                        <div class="title-border-opera-left"></div>
+                        <div class="title-border-opera-font">236</div>
+                        <div class="title-border-opera-right"><i class="iconfont icon-icon_praise"></i></div>
+                        <div class="title-border-opera-font ok">236</div>
+                    </div>
+                    <div class="title-border-bottom"></div>
+                </li>
+                <li>
+                    <div class="title-border-photo"></div>
+                    <div class="title-border-name">谭秀英</div>
+                    <div class="title-border-about">华为总经理</div>
+                    <div class="title-border-font">
+                        语雀是一款优雅高效的在线文档编辑与协同工具， 让每 个企业轻松拥有文档中心阿里巴巴集团内部使用多年， 众多中小企业首选。
+                    </div>
+                    <div class="title-border-time">2018-3-8</div>
+                    <div class="title-border-opera">
+                        <div class="title-border-opera-left"></div>
+                        <div class="title-border-opera-font">236</div>
+                        <div class="title-border-opera-right"><i class="iconfont icon-icon_praise"></i></div>
+                        <div class="title-border-opera-font ok">236</div>
+                    </div>
+                    <div class="title-border-bottom"></div>
+                </li>
+            </ul>
+            <div style="width:100%;height:80px;background: #f5f5f5;padding-top: 15px">
+                <div class="def"></div>
+            </div>
+        </div>
+        <div style="width:100%;height:90px;background: #f5f5f5;padding-top: 15px">
+            <div class="def"></div>
+        </div>
+    </div>
+    <!-- 底部按钮 -->
+    <div class="all-bottom">
+        <div class="input">
+            <img class="img" src="static/images/icon_reply.png" width="16" height="16">
+            <input type="text" placeholder="写评论">
+        </div>
+        <div class="left">
+            <i style='color:#999999;font-size:24px' class="iconfont icon-icon_sc"></i>
+        </div>
+        <div class="right">
+            <i style='color:#999999;font-size:24px' class="iconfont icon-icon_praise"></i>
+        </div>
+    </div>
+    <div class="title-for-input">
+            <div class="title-for-input-pen"></div>
+            <input id="title-for" type="text" placeholder="说点什么吧">
+            <div class="title-for-input-arrow"></div>
+    </div>
+    <div class="all-for-hide">
+        <div class="all-for-anli">
+            <div class="all-for-anli-title">分享到</div>
+            <div class="all-for-anli-ul">
+                <ul>
+                    <li>
+                        <div class="all-for-anli-ul-img"></div>
+                        <div class="all-for-anli-ul-font">微信</div>
+                    </li>
+                    <li>
+                        <div class="all-for-anli-ul-img"></div>
+                        <div class="all-for-anli-ul-font">朋友圈</div>
+                    </li>
+                    <li>
+                        <div class="all-for-anli-ul-img"></div>
+                        <div class="all-for-anli-ul-font">QQ</div>
+                    </li>
+                    <li>
+                        <div class="all-for-anli-ul-img"></div>
+                        <div class="all-for-anli-ul-font">QQ空间</div>
+                    </li>
+                    <li>
+                        <div class="all-for-anli-ul-img"></div>
+                        <div class="all-for-anli-ul-font">微博</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="all-for-anli-btn">取消</div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            const win = $(window); //得到窗口对象
+            const height = $('.image-for-index')[0].offsetHeight
+            win.scroll(function () {
+                if (win.scrollTop() >= height) {
+                    $('.title-for').addClass('fixed');
+                    $('.title-for-solid-two').css('top', '41px')
+                } else {
+                    $('.title-for').removeClass('fixed');
+                    $('.title-for-solid-two').css('top', '242px')
+                }
+            })
+            $('#title-for-middle-ul li').click(function () {
+                window.location.href = "videoes.html"
+            })
+            //底部收藏
+        let flag2 = true;
+        $('.left i').click(function () {
+            if (flag2) {
+                $('.left i').addClass('icon-icon_collect_selecte').removeClass('icon-icon_sc').css('color',
+                    '#00BCD4');
+                flag2 = false;
+            } else {
+                $('.left i').addClass('icon-icon_sc').removeClass('icon-icon_collect_selecte').css('color',
+                    '#999999');
+                flag2 = true;
+            }
+        });
+        // 底部点赞
+        var flag3 = true;
+        $('.right i').click(function () {
+            if (flag3) {
+                $('.right i').addClass('icon-icon_praise_selected').removeClass('icon-icon_dz').css('color',
+                    '#00BCD4');
+                flag3 = false;
+            } else {
+                $('.right i').addClass('icon-icon_dz').removeClass('icon-icon_praise_selected').css('color',
+                    '#999999');
+                flag3 = true;
+            }
+        });
+        // 底部评论
+        $('.all-bottom .input input').focus(function(){
+            $('.title-for-input').css('display','block').children('#title-for').focus();
+        });
+        $('.title-for-input .title-for-input-arrow').click(function(){
+            $('.title-for-input').css('display','none').children('#title-for').val('');
+        });
+        $(".title-border-opera-left").click(function () {
+            window.location = "comment.html";
+        })
+        for (let i = 0; i < titleUl.children.length; i++) {
+            titleUl.children[i].children[0].style.background = 'url("static/images/img_video' + (i + 1) +
+                '.png") no-repeat' //为视频赋上图片
+            titleUl.children[i].children[0].style.backgroundSize = "100% 97px";
+        }
+        })
+        let imageStartForIndex = document.getElementsByClassName("image-for-index")[0]; //取得标题第一个盒子
+        let videoStartForIndex = document.getElementsByClassName("video-for-index")[0]; //取得标题视频
+        let titleStartForOne = document.getElementById("title-one"); //取得标题视频
+        let titleStartForTwo = document.getElementById("title-two"); //取得标题视频
+        let solidStartForOne = document.getElementById("solid-one"); //取得详情下划线
+        let solidStartForTwo = document.getElementById("solid-two"); //取得评论下划线
+        let titleTop = document.getElementsByClassName("title-for-border-btn-top")[0]; //取得展开按钮
+        let titleBottom = document.getElementsByClassName("title-for-border-btn-bottom")[0]; //取得收起按钮
+        let titleTrue = document.getElementById("title-for-true"); //取得详情全部数据
+        let titleFalse = document.getElementById("title-for-false"); //取得详情缩略版
+        let titleUl = document.getElementById("title-for-middle-ul"); //中部列表
+        let titleUlBottom = document.getElementById("title-for-bottom-ul"); //底部列表
+        let titleBorderOne = document.getElementById("title-border-one"); //取得详情全部数据
+        let titleBorderTwo = document.getElementById("title-border-two"); //取得详情缩略版
+        let titleBorderPhoto = document.getElementsByClassName("title-border-photo"); //取得照片框
+        let titleForInput = document.getElementsByClassName("title-for-input")[0]; //评论输入框隐藏
+        let titleFor = document.getElementById("title-for"); //获取焦点
+        let body = document.getElementsByTagName("body")[0];
+        let allForHide = document.getElementsByClassName("all-for-hide")[0];
+        let allForAnliUlImg = document.getElementsByClassName("all-for-anli-ul-img"); //分享图片
+        let flag = 1;
+        let flag1 = true;
+        //点赞
+        $('.title-border-opera-right .icon-icon_praise').click(function () {
+            if ($(this).attr("flag") === 'false') {
+                let num = $(this).parent().siblings('.ok').html();
+                $(this).removeClass('icon-icon_praise_selected').addClass('icon-icon_praise').css('color',
+                    '#999999').parent().siblings('.ok').html(parseInt(num) - 1);
+                $(this).attr("flag", "true");
+            } else {
+                let count = $(this).parent().siblings('.ok').html();
+                $(this).removeClass('icon-icon_praise').addClass('icon-icon_praise_selected').css('color',
+                    '#00BCD4').parent().siblings('.ok').html(parseInt(count) + 1);
+
+                $(this).attr("flag", "false");
+            }
+        })
+        //收藏
+        let flag2 = true;
+        $('.left i').click(function () {
+            if (flag2) {
+                $('.left i').addClass('icon-icon_collect_selecte').removeClass('icon-icon_sc').css('color',
+                    '#00BCD4');
+                flag2 = false;
+            } else {
+                $('.left i').addClass('icon-icon_sc').removeClass('icon-icon_collect_selecte').css('color',
+                    '#999999');
+                flag2 = true;
+            }
+        });
+        // 底部点赞
+        $('.right i').click(function () {
+            if (flag2) {
+                $('.right i').addClass('icon-icon_praise_selected').removeClass('icon-icon_dz').css('color',
+                    '#00BCD4');
+                flag2 = false;
+            } else {
+                $('.right i').addClass('icon-icon_dz').removeClass('icon-icon_praise_selected').css('color',
+                    '#999999');
+                flag2 = true;
+            }
+        });
+        $(".title-border-opera-left").click(function () {
+            window.location = "comment.html";
+        })
+        for (let i = 0; i < titleUl.children.length; i++) {
+            titleUl.children[i].children[0].style.background = 'url("static/images/img_video' + (i + 1) +
+                '.png") no-repeat' //为视频赋上图片
+            titleUl.children[i].children[0].style.backgroundSize = "100% 97px";
+        }
+        for (let i = 0; i < titleBorderPhoto.length; i++) {
+            titleBorderPhoto[i].style.background = 'url("static/images/img_xq_avatar' + (i + 1) + '.png")';
+            titleBorderPhoto[i].style.backgroundSize = "30px 30px";
+        }
+        for (let i = 0; i < allForAnliUlImg.length; i++) {
+            allForAnliUlImg[i].style.background = 'url("static/images/wechat' + (i + 1) +
+                '.png") no-repeat';
+            allForAnliUlImg[i].style.backgroundSize = "50px 50px";
+        }
+        titleFor.onblur = function () {
+            titleForInput.style.display = "none";
+        }
+
+        allForHide.onclick = function () {
+            allForHide.style.display = "none";
+            body.className = "";
+        }
+        allForHide.addEventListener('touchmove', function (event) {
+            event.preventDefault();
+        })
+        // 收藏按钮变色
+        function changeColorForBottom() {
+            if (flag) {
+                titleUlBottom.children[0].children[0].style.background =
+                    'url("static/images/icon_pl1_click.png") no-repeat';
+                titleUlBottom.children[0].children[1].style.color = '#00BCD4';
+                titleUlBottom.children[0].children[0].style.backgroundSize = "20px 20px";
+                flag = false;
+            } else {
+                titleUlBottom.children[0].children[0].style.background =
+                    'url("static/images/icon_pl1.png") no-repeat';
+                titleUlBottom.children[0].children[1].style.color = '#333';
+                titleUlBottom.children[0].children[0].style.backgroundSize = "20px 20px";
+                flag = true;
+            }
+        }
+
+        function speak() {
+            titleForInput.style.display = "block";
+            titleFor.focus();
+        }
+        /**
+         * @description 播放视频
+         * @author heaihua 043434
+         * @param
+         * @return
+         */
+        function btnStartForIndexClick() {
+            videoStartForIndex.style.display = "block";
+            imageStartForIndex.style.display = "none";
+        };
+        /**
+         * @description 文字点击变色,且切换评论区和详情页
+         * @author heaihua 043434
+         * @param {number} flag
+         * @return
+         */
+        function titleChangeColor(flag) {
+            if (flag === 1) {
+                titleStartForOne.className = "title-for-one title-for-color";
+                titleStartForTwo.className = "title-for-two";
+                solidStartForOne.className = "title-for-solid-one solid-for-color";
+                solidStartForTwo.className = "title-for-solid-two";
+                titleBorderOne.style.display = "block";
+                titleBorderTwo.style.display = "none";
+            } else if (flag === 2) {
+                titleStartForOne.className = "title-for-one";
+                titleStartForTwo.className = "title-for-two title-for-color";
+                solidStartForOne.className = "title-for-solid-one";
+                solidStartForTwo.className = "title-for-solid-two solid-for-color";
+                titleBorderOne.style.display = "none";
+                titleBorderTwo.style.display = "block";
+            }
+        };
+        /**
+         * @description 展开收起按钮
+         * @author heaihua 043434
+         * @param
+         * @return
+         */
+        function btnVisable(flag) {
+            if (flag) {
+                titleTop.style.display = "none";
+                titleBottom.style.display = "block";
+                titleTrue.className = "title-for-border-body-true";
+                titleFalse.className = "title-for-border-body-false title-for-border-visible";
+            } else {
+                titleTop.style.display = "block";
+                titleBottom.style.display = "none";
+                titleTrue.className = "title-for-border-body-true title-for-border-visible";
+                titleFalse.className = "title-for-border-body-false";
+            }
+        }
+    </script>
+</body>
+
+</html>

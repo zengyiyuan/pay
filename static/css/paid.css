@@ -1,0 +1,185 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #F4F4F4;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  margin: 0;
+}
+.card-box {
+  height: 158px;
+  background-color: #fff;
+  position: relative;
+}
+.card-box .content {
+  height: 138px;
+}
+.card-box .content div {
+  display: inline-block;
+  text-align: center;
+}
+.card-box .content div h3 {
+  margin: 0;
+  margin-top: 3px;
+}
+.card-box .content div span {
+  font-size: 15px;
+  color: #333333;
+}
+.card-box .content div .info {
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+}
+.card-box .content div .head-box {
+  display: table-cell;
+  width: 76px;
+  height: 76px;
+  background: url("../images/frame@3x.png") no-repeat center center;
+  background-image: url("../images/frame@3x.png");
+  background-size: 76px 76px;
+  background-position: center center;
+  text-align: center;
+  vertical-align: middle;
+}
+.card-box .content div .head-box.right {
+  background-image: url(../images/frame_yellow@3x.png);
+}
+.card-box .content div.left-person {
+  position: absolute;
+  left: 15.5%;
+  top: 15%;
+}
+.card-box .content div.left-person span {
+  font-weight: 700;
+}
+.card-box .content div.right-person {
+  position: absolute;
+  right: 15.5%;
+  top: 15%;
+}
+.card-box .content div.right-person span {
+  font-weight: 700;
+}
+.card-box .content .center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 27%;
+}
+.pay-box {
+  margin-top: 5px;
+  height: 135px;
+  background-color: #fff;
+}
+.pay-box .title {
+  height: 46px;
+  border-bottom: 1px solid #F4F4F4;
+}
+.pay-box .title h3 {
+  font-size: 16px;
+  padding: 12px 0px 12px 15px;
+}
+.pay-box .coupon,
+.pay-box .paid-methods {
+  height: 44px;
+}
+.pay-box .coupon div,
+.pay-box .paid-methods div {
+  font-size: 15px;
+  padding: 12px 14px 12px 15px;
+}
+.pay-box .coupon {
+  border-bottom: 1px solid #F4F4F4;
+}
+.pay-box .coupon div span {
+  margin-left: 3px;
+}
+.pay-box .coupon div .icon-icon_ticket {
+  vertical-align: -1.5px;
+  font-size: 18px;
+  color: #F16164;
+}
+.pay-box .coupon div .icon-icon_selected {
+  float: right;
+  font-size: 20px;
+  color: #00BCD4;
+}
+.pay-box .coupon div .icon-icon_unselected {
+  float: right;
+  font-size: 20px;
+  color: #ccc;
+}
+.pay-box .coupon div .num {
+  font-style: normal;
+  color: #999;
+}
+.pay-box .paid-methods {
+  height: 45px;
+}
+.pay-box .paid-methods div span {
+  margin-left: 3px;
+}
+.pay-box .paid-methods div .icon-icon_wechat {
+  font-size: 18px;
+  color: #24AF41;
+  vertical-align: -1.5px;
+}
+.pay-box .paid-methods div .icon-icon_selected {
+  float: right;
+  font-size: 20px;
+  color: #00BCD4;
+}
+.pay-box .paid-methods div .icon-icon_unselected {
+  float: right;
+  font-size: 20px;
+  color: #ccc;
+}
+.operate {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  display: flex;
+}
+.operate .money,
+.operate .confirm {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+.operate .money span.paid-now,
+.operate .confirm span.paid-now {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
+.operate .money {
+  background-color: #fff;
+}
+.operate .money span {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: 16px;
+}
+.operate .money span em {
+  color: #00BCD4;
+  font-style: normal;
+  font-weight: 700;
+}
+.operate .confirm {
+  background-color: #00BCD4;
+}
+.operate .confirm span {
+  font-size: 18px;
+  color: #fff;
+}

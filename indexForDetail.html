@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/indexForDetail.css">
+    <script src="js/index.js"></script>
+    <title>页面详情</title>
+</head>
+
+<body>
+    <div class="all-for-index">
+        <div class="image-for-index">
+            <img class="image-for-index-img-one" src="image/pic_video.png" alt="这是一张图片">
+            <img class="image-for-index-img-two" onclick="btnStartForIndexClick()" src="image/btn_play.png" alt="按钮">
+            <div class="tit-for-index">本次播放将消耗22.5M流量</div>
+        </div>
+        <video class="video-for-index" src="video/59b6bb1098e51.mp4" width="375" height="200" controls="controls"></video>
+        <div class="title-for">
+            <div id="title-one" class="title-for-one title-for-color" onclick="titleChangeColor(1)">详情</div>
+            <div id="title-two" class="title-for-two" onclick="titleChangeColor(2)">评论391</div>
+            <div id="solid-one" class="title-for-solid-one solid-for-color"></div>
+            <div id="solid-two" class="title-for-solid-two"></div>
+        </div>
+        <div class="title-solid"></div>
+        <!-- 文字底部展示 -->
+        <div class="title-for-border">
+            <div class="title-for-border-top">
+                <div class="title-for-border-head">
+                    面试总是不通过？那是因为你没看穿这些真相，这个视频教你拿到offer
+                </div>
+                <div id="title-for-false" class="title-for-border-body-false">
+                    在找工作或者跳槽的时候，面试就成了很多人找到好工作的绊脚石，那为什么面试总是通不过？可能因为你没看穿这些真相。 又到金三银四，胖友们想跳槽的心又...
+                </div>
+                <div id="title-for-true" class="title-for-border-body-true title-for-border-visible">
+                    在找工作或者跳槽的时候，面试就成了很多人找到好工作的绊脚石，那为什么面试总是通不过？可能因为你没看穿这些真相。 又到金三银四，胖友们想跳槽的心又
+                    在找工作或者跳槽的时候，面试就成了很多人找到好工作的绊脚石，那为什么面试总是通不过？可能因为你没看穿这些真相。 又到金三银四，胖友们想跳槽的心又
+                    在找工作或者跳槽的时候，面试就成了很多人找到好工作的绊脚石，那为什么面试总是通不过？可能因为你没看穿这些真相。 又到金三银四，胖友们想跳槽的心又
+                </div>
+                <div class="title-for-border-btn">
+                    <div class="title-for-border-btn-top" onclick="btnVisable(true)"></div>
+                    <div class="title-for-border-btn-bottom" onclick="btnVisable(false)"></div>
+                </div>
+                <!-- 分界线 -->
+                <div class="title-for-border-solid"></div>
+            </div>
+
+        </div>
+        <div class="title-for-border title-for-border-visible">
+
+        </div>
+    </div>
+    <script>
+        let imageStartForIndex = document.getElementsByClassName("image-for-index")[0]; //取得标题第一个盒子
+        let videoStartForIndex = document.getElementsByClassName("video-for-index")[0]; //取得标题视频
+        let titleStartForOne = document.getElementById("title-one"); //取得标题视频
+        let titleStartForTwo = document.getElementById("title-two"); //取得标题视频
+        let solidStartForOne = document.getElementById("solid-one"); //取得详情下划线
+        let solidStartForTwo = document.getElementById("solid-two"); //取得评论下划线
+        let titleTop = document.getElementsByClassName("title-for-border-btn-top")[0]; //取得展开按钮
+        let titleBottom = document.getElementsByClassName("title-for-border-btn-bottom")[0]; //取得收起按钮
+        let titleTrue = document.getElementById("title-for-true"); //取得详情全部数据
+        let titleFalse = document.getElementById("title-for-false"); //取得详情缩略版
+
+        /**
+         * @description 播放视频
+         * @author heaihua 043434
+         * @param
+         * @return
+         */
+        function btnStartForIndexClick() {
+            videoStartForIndex.style.display = "block";
+            imageStartForIndex.style.display = "none";
+        };
+        /**
+         * @description 文字点击变色
+         * @author heaihua 043434
+         * @param {number} flag
+         * @return
+         */
+        function titleChangeColor(flag) {
+            if (flag === 1) {
+                titleStartForOne.className = "title-for-one title-for-color";
+                titleStartForTwo.className = "title-for-two";
+                solidStartForOne.className = "title-for-solid-one solid-for-color";
+                solidStartForTwo.className = "title-for-solid-two";
+            } else if (flag === 2) {
+                titleStartForOne.className = "title-for-one";
+                titleStartForTwo.className = "title-for-two title-for-color";
+                solidStartForOne.className = "title-for-solid-one";
+                solidStartForTwo.className = "title-for-solid-two solid-for-color";
+            }
+        };
+        /**
+         * @description 展开收起按钮
+         * @author heaihua 043434
+         * @param
+         * @return
+         */
+        function btnVisable(flag) {
+            if (flag) {
+                titleTop.style.display = "none";
+                titleBottom.style.display = "block";
+                titleTrue.className = "title-for-border-body-true";
+                titleFalse.className = "title-for-border-body-false title-for-border-visible";
+            } else {
+                titleTop.style.display = "block";
+                titleBottom.style.display = "none";
+                titleTrue.className = "title-for-border-body-true title-for-border-visible";
+                titleFalse.className = "title-for-border-body-false";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付失败</title>
+</head>
+<body>
+    <div class="container">
+            <img src="static/images/icon_pay_failure@3x.png" alt="">
+            <div class="result-text">支付失败</div>
+            <p>您可以到个人中心，我的订单中继续支付</p>
+            <div class="button-box">
+                <button class="paid-again">重新支付</button>
+                <button class="order">查看订单</button>
+            </div>
+    </div>
+</body>
+</html>
+<style>
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+    .result-text{
+        font-size: 16px;
+        color: #333;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+        margin: 0 auto;padding: 0;
+    }
+    img{
+        margin: 0 auto;
+        width: 60px;
+        display: block;
+        background-size: contain;
+    }
+    div.button-box{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    div.button-box button {
+        font-size: 18px;
+        width: 37.8%;
+        height: 47px;
+        border-radius: 24px;
+        margin: 0 11px;
+        background-color: #fff;
+        border: 1px solid;
+        outline: none;
+    }
+    div.button-box button.paid-again{
+        border-color:#00BCD4;
+        color: #00BCD4
+    }
+    div.button-box button.order{
+        border-color:#D9D9D9;
+        color: #333
+    }
+</style>

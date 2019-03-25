@@ -1,0 +1,345 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+#comments-box .comment-box {
+  width: 95%;
+  padding-top: 17px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #F4F4F4;
+}
+#comments-box .comment-box .comment-box-head {
+  height: 30px;
+}
+#comments-box .comment-box .comment-box-head .head-image {
+  height: 30px;
+  position: relative;
+}
+#comments-box .comment-box .comment-box-head .head-image img {
+  width: 30px;
+  display: inline-block;
+}
+#comments-box .comment-box .comment-box-head .head-image span {
+  left: 35px;
+  top: 0px;
+  position: absolute;
+  font-size: 12px;
+  color: #333;
+}
+#comments-box .comment-box .comment-box-head .head-image h3 {
+  left: 35px;
+  top: 16px;
+  position: absolute;
+  margin: 0;
+  font-size: 10px;
+  color: #999;
+  font-weight: normal;
+}
+#comments-box .comment-box .comment-box-content {
+  clear: both;
+  min-height: 60px;
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0 10px 0px;
+}
+#comments-box .comment-box .comment-box-footer .time {
+  font-size: 12px;
+  color: #999;
+}
+#comments-box .comment-box .comment-box-footer div {
+  margin-top: 0.2rem;
+  display: inline-block;
+  font-size: 12px;
+  float: right;
+  margin-right: 5px;
+}
+#comments-box .comment-box .comment-box-footer div div {
+  color: #999;
+  display: inline-block;
+}
+#comments-box .comment-box .comment-box-footer div div span {
+  color: #999;
+}
+#comments-box .comment-box .comment-box-footer div .reply {
+  margin-right: 15px;
+}
+#comments-box .comment-box .comment-box-footer div .agree {
+  position: relative;
+  top: -20px;
+  margin-right: 0;
+}
+#comments-box .comment-box .comment-box-footer div .iconfont {
+  font-size: 15px;
+  color: #999;
+  margin-right: 3px;
+}
+#comments-box .all-comment {
+  width: 95%;
+  height: 50px;
+  font-size: 14px;
+  padding-left: 5%;
+  color: #666666;
+  line-height: 50px;
+  background: #f5f5f5;
+}
+#comments-box .detail {
+  width: 95%;
+  min-height: 20px;
+  margin: 0 auto;
+  padding: 10px 0 15px 0;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+#comments-box .detail .font {
+  width: 95%;
+  min-height: 20px;
+  font-size: 12px;
+  margin: 0 auto;
+  color: #999999;
+}
+#comments-box .detail .click {
+  margin-left: 2.5%;
+  width: 50px;
+  height: 12px;
+  font-size: 12px;
+  color: #00BCD4;
+}
+.all-bottom {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #f5f5f5;
+  background: #fff;
+  display: flex;
+}
+.all-bottom .input {
+  flex: 0.8;
+  padding-left: 0;
+  line-height: 44px;
+}
+.all-bottom .input img {
+  position: relative;
+  left: 10%;
+  top: 4px;
+}
+.all-bottom .input input {
+  width: 80%;
+  height: 36px;
+  outline: none;
+  border-style: none;
+  background: #f4f4f4;
+  border-radius: 16px;
+  padding-left: 10%;
+}
+.all-bottom .left,
+.all-bottom .right {
+  flex: 0.1;
+  text-align: left;
+  line-height: 50px;
+}
+.title-for-input {
+  clear: both;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  bottom: 0;
+  z-index: 99999999;
+  border-top: 1px solid #f5f5f5;
+  background: #ffffff;
+  padding-top: 7px;
+  display: none;
+}
+.title-for-input input {
+  width: 65%;
+  height: 43px;
+  border-style: none;
+  outline: none;
+  margin-left: 15px;
+  background: #e7e7e7;
+  border-radius: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.title-for-input .title-for-input-pen {
+  width: 16px;
+  height: 16px;
+  background: url('../images/icon_reply.png') no-repeat;
+  background-size: 16px 16px;
+  position: absolute;
+  left: 25px;
+  top: 21px;
+}
+.title-for-input .title-for-input-face {
+  width: 28px;
+  height: 28px;
+  background: url('../images/emoji.png') no-repeat;
+  background-size: 28px 28px;
+  position: absolute;
+  right: 20%;
+  top: 16px;
+}
+.title-for-input .title-for-input-arrow {
+  width: 31px;
+  height: 28px;
+  background: url('../images/icons_send.png') no-repeat;
+  background-size: 31px 28px;
+  position: absolute;
+  right: 15px;
+  top: 16px;
+}
+.commit {
+  width: 100%;
+  height: 1000px;
+  background: rgba(1, 1, 1, 0.3);
+  position: fixed;
+  top: 0;
+  display: none;
+}
+.commit .hide {
+  width: 100%;
+  height: 50px;
+}
+.commit .list {
+  width: 100%;
+  min-height: 20px;
+  background: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+}
+.commit .list .stop {
+  margin: 17px 0 0 15px;
+}
+.commit .list .size {
+  width: 100%;
+  height: 18px;
+  font-size: 18px;
+  text-align: center;
+  margin-top: -30px;
+}
+.commit .list .comment-box {
+  width: 95%;
+  padding-top: 17px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #F4F4F4;
+}
+.commit .list .comment-box .comment-box-head {
+  height: 30px;
+}
+.commit .list .comment-box .comment-box-head .head-image {
+  height: 30px;
+  position: relative;
+}
+.commit .list .comment-box .comment-box-head .head-image img {
+  width: 30px;
+  display: inline-block;
+}
+.commit .list .comment-box .comment-box-head .head-image span {
+  left: 35px;
+  top: 0px;
+  position: absolute;
+  font-size: 12px;
+  color: #333;
+}
+.commit .list .comment-box .comment-box-head .head-image h3 {
+  left: 35px;
+  top: 16px;
+  position: absolute;
+  margin: 0;
+  font-size: 10px;
+  color: #999;
+  font-weight: normal;
+}
+.commit .list .comment-box-content {
+  clear: both;
+  min-height: 60px;
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0 10px 0px;
+}
+.commit .list .comment-box-footer .time {
+  font-size: 12px;
+  color: #999;
+}
+.commit .list .comment-box-footer div {
+  margin-top: 0.2rem;
+  display: inline-block;
+  font-size: 12px;
+  float: right;
+  margin-right: 5px;
+}
+.commit .list .comment-box-footer div div {
+  color: #999;
+  display: inline-block;
+}
+.commit .list .comment-box-footer div div span {
+  color: #999;
+}
+.commit .list .comment-box-footer div .reply {
+  margin-right: 15px;
+}
+.commit .list .comment-box-footer div .agree {
+  position: relative;
+  top: -20px;
+  margin-right: 0;
+}
+.commit .list .comment-box-footer div .iconfont {
+  font-size: 15px;
+  color: #999;
+  margin-right: 3px;
+}
+.commit .title-for-input {
+  width: 100%;
+  height: 55px;
+  z-index: 9999999999999999;
+  border-top: 1px solid #f5f5f5;
+  background: #ffffff;
+  padding-top: 7px;
+  position: fixed;
+  bottom: 0;
+}
+.commit .title-for-input input {
+  width: 65%;
+  height: 43px;
+  border-style: none;
+  outline: none;
+  margin-left: 15px;
+  background: #e7e7e7;
+  border-radius: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.commit .title-for-input .title-for-input-pen {
+  width: 16px;
+  height: 16px;
+  background: url('../images/icon_reply.png') no-repeat;
+  background-size: 16px 16px;
+  position: absolute;
+  left: 25px;
+  top: 21px;
+}
+.commit .title-for-input .title-for-input-face {
+  width: 28px;
+  height: 28px;
+  background: url('../images/emoji.png') no-repeat;
+  background-size: 28px 28px;
+  position: absolute;
+  right: 20%;
+  top: 16px;
+}
+.commit .title-for-input .title-for-input-arrow {
+  width: 31px;
+  height: 28px;
+  background: url('../images/icons_send.png') no-repeat;
+  background-size: 31px 28px;
+  position: absolute;
+  right: 15px;
+  top: 16px;
+}

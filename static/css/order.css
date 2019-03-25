@@ -1,0 +1,245 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html .content-container,
+body .content-container {
+  padding-top: 44px;
+}
+html .order-box,
+body .order-box {
+  margin-top: 8px;
+}
+html .order-box .title,
+body .order-box .title {
+  height: 32px;
+  background-color: #fff;
+  padding: 8px 15px 0px 15px;
+}
+html .order-box .title span,
+body .order-box .title span {
+  font-size: 14px;
+}
+html .order-box .title span.order-num,
+body .order-box .title span.order-num {
+  float: left;
+  margin-top: 1%;
+  color: #999;
+}
+html .order-box .title span.status,
+body .order-box .title span.status {
+  float: right;
+  color: #00BCD4;
+  margin-top: 1%;
+}
+html .order-box .card-box,
+body .order-box .card-box {
+  background-color: #F9F9F9;
+  height: 141px;
+  position: relative;
+}
+html .order-box .card-box .content,
+body .order-box .card-box .content {
+  height: 138px;
+}
+html .order-box .card-box .content div,
+body .order-box .card-box .content div {
+  display: inline-block;
+  text-align: center;
+}
+html .order-box .card-box .content div h3,
+body .order-box .card-box .content div h3 {
+  margin: 0;
+  margin-top: 3px;
+}
+html .order-box .card-box .content div span,
+body .order-box .card-box .content div span {
+  font-size: 15px;
+  color: #333333;
+}
+html .order-box .card-box .content div .info,
+body .order-box .card-box .content div .info {
+  width: 100px;
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+}
+html .order-box .card-box .content div .head-box,
+body .order-box .card-box .content div .head-box {
+  display: table-cell;
+  width: 100px;
+  height: 76px;
+  background: url("../images/frame@3x.png") no-repeat center center;
+  background-image: url("../images/frame@3x.png");
+  background-size: 76px 76px;
+  background-position: center center;
+  text-align: center;
+  vertical-align: middle;
+}
+html .order-box .card-box .content div .head-box.right,
+body .order-box .card-box .content div .head-box.right {
+  background-image: url(../images/frame_yellow@3x.png);
+}
+html .order-box .card-box .content div.left-person,
+body .order-box .card-box .content div.left-person {
+  position: absolute;
+  left: 9.5%;
+  top: 7%;
+}
+html .order-box .card-box .content div.left-person span,
+body .order-box .card-box .content div.left-person span {
+  font-weight: 700;
+}
+html .order-box .card-box .content div.right-person,
+body .order-box .card-box .content div.right-person {
+  position: absolute;
+  right: 9.5%;
+  top: 7%;
+}
+html .order-box .card-box .content div.right-person span,
+body .order-box .card-box .content div.right-person span {
+  font-weight: 700;
+}
+html .order-box .card-box .content .center,
+body .order-box .card-box .content .center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 22%;
+}
+html .order-box .card-box.higher,
+body .order-box .card-box.higher {
+  height: 158px;
+}
+html .order-box .card-box.higher .content,
+body .order-box .card-box.higher .content {
+  height: 155px;
+}
+html .order-box .footer,
+body .order-box .footer {
+  position: relative;
+  height: 37px;
+  background-color: #fff;
+  padding: 13px 15px 0px 15px;
+}
+html .order-box .footer .time,
+body .order-box .footer .time {
+  font-size: 14px;
+  color: #999;
+}
+html .order-box .footer .operate,
+body .order-box .footer .operate {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px;
+}
+html .order-box .footer .operate button,
+body .order-box .footer .operate button {
+  font-size: 13px;
+  padding: 0 9px;
+  height: 28px;
+  line-height: 27px;
+  border-radius: 15px;
+  outline: none;
+  margin: 0 3px;
+}
+html .order-box .footer .operate button.cancel,
+body .order-box .footer .operate button.cancel {
+  border: 1px solid #00BCD4;
+  color: #00BCD4;
+  background-color: #fff;
+}
+html .order-box .footer .operate button.pay,
+body .order-box .footer .operate button.pay {
+  border: 1px solid #00BCD4;
+  color: #fff;
+  background-color: #00BCD4;
+}
+html .order-box .footer .operate button.watch-now,
+body .order-box .footer .operate button.watch-now {
+  border: 1px solid #00BCD4;
+  color: #fff;
+  background-color: #00BCD4;
+}
+html .order-box .footer .operate button.watch-now,
+body .order-box .footer .operate button.watch-now {
+  border: 1px solid #00BCD4;
+  color: #fff;
+  background-color: #00BCD4;
+}
+html .order-box .footer .operate button.evaluate,
+body .order-box .footer .operate button.evaluate {
+  border: 1px solid #00BCD4;
+  color: #fff;
+  background-color: #00BCD4;
+}
+html .header,
+body .header {
+  width: 100%;
+  height: 44px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+}
+html .header a,
+body .header a {
+  position: relative;
+  line-height: 42px;
+  display: inline-block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+}
+html .header a span,
+body .header a span {
+  visibility: hidden;
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 4px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  background-color: #00BCD4;
+}
+html .header a.active,
+body .header a.active {
+  color: #00BCD4;
+}
+html .header a.active span,
+body .header a.active span {
+  visibility: visible;
+  background-color: #00BCD4;
+}
+html .blank,
+body .blank {
+  position: relative;
+  margin-top: 8px;
+  flex: 1;
+  background-color: #fff;
+  text-align: center;
+}
+html .blank img,
+body .blank img {
+  width: 150px;
+  display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20%;
+}
+html .blank p,
+body .blank p {
+  font-size: 14px;
+  color: #ddd;
+}

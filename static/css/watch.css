@@ -1,0 +1,372 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.banner {
+  position: relative;
+}
+.banner img {
+  display: block;
+  width: 100%;
+}
+.banner button {
+  background-color: transparent;
+  position: absolute;
+  color: #fff;
+  font-size: 16px;
+  width: 106px;
+  height: 34px;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner .views {
+  position: absolute;
+  right: 15px;
+  bottom: 8px;
+  color: #fff;
+  font-size: 12px;
+}
+.banner .views .icon-icon_paly {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  font-size: 11px;
+  color: #fff;
+  margin-right: 2px;
+}
+.paid .player-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.paid .player-box img {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+}
+.paid .player-box span {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 8px;
+}
+.title-for {
+  width: 100%;
+  position: relative;
+  height: 44px;
+  border-bottom: 1px solid #F4F4F4;
+}
+.title-for.fixed {
+  position: fixed;
+  z-index: 9999;
+  background-color: #fff;
+  top: 0;
+}
+.title-for-one {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.title-for-two {
+  position: absolute;
+  right: 29%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.title-for-solid-one {
+  position: relative;
+  top: 43px;
+  left: 30%;
+  width: 33px;
+  height: 3px;
+}
+.title-for-solid-two {
+  position: absolute;
+  top: 42px;
+  right: 29%;
+  width: 58px;
+  height: 3px;
+}
+/* 鼠标点击变色 */
+.title-for-color {
+  color: #00BCD4;
+}
+.solid-for-color {
+  background: #00BCD4;
+}
+.solid-for-color {
+  background: #00BCD4;
+}
+#detail-box {
+  background-color: #F5F5F5;
+}
+#detail-box .card-box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 207px;
+  background-color: #fff;
+  position: relative;
+}
+#detail-box .card-box .viewer {
+  position: absolute;
+  display: inline-block;
+  font-size: 10px;
+  color: #fff;
+  width: 53px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  background: url('../images/home_ic_want@3x.png') no-repeat;
+  background-size: 53px 18px;
+  right: 15px;
+}
+#detail-box .card-box .content {
+  height: 138px;
+  border-bottom: 1px solid #F5F5F5;
+}
+#detail-box .card-box .content div {
+  display: inline-block;
+  text-align: center;
+}
+#detail-box .card-box .content div span {
+  font-size: 15px;
+  color: #333333;
+}
+#detail-box .card-box .content div .info {
+  margin: 0;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+  width: 100px;
+}
+#detail-box .card-box .content div .head-box {
+  display: table-cell;
+  width: 100px;
+  height: 76px;
+  background: url("../images/frame@3x.png") no-repeat center center;
+  background-image: url("../images/frame@3x.png");
+  background-size: 76px 76px;
+  background-position: center center;
+  text-align: center;
+  vertical-align: middle;
+}
+#detail-box .card-box .content div .head-box.right {
+  background-image: url(../images/frame_yellow@3x.png);
+}
+#detail-box .card-box .content div.left-person {
+  position: absolute;
+  left: 9.5%;
+  top: 7%;
+}
+#detail-box .card-box .content div.left-person span {
+  font-weight: 700;
+}
+#detail-box .card-box .content div.right-person {
+  position: absolute;
+  right: 9.5%;
+  top: 7%;
+}
+#detail-box .card-box .content div.right-person span {
+  font-weight: 700;
+}
+#detail-box .card-box .content .center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 22%;
+}
+#detail-box .card-box .content .center button {
+  background-color: #fff;
+  display: block;
+  width: 61px;
+  height: 25px;
+  line-height: 23.5px;
+  border-radius: 14px;
+  color: #25CAE3;
+  font-size: 14px;
+  border: 1px solid #25CAE3;
+  margin-top: 13px;
+}
+#detail-box .card-box .footer {
+  position: relative;
+}
+#detail-box .card-box .footer .tips {
+  display: inline-block;
+  width: 92%;
+  height: 20px;
+  margin-top: 9px;
+  font-size: 14px;
+  color: #333;
+  margin-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#detail-box .card-box .footer .start-time {
+  position: absolute;
+  font-size: 12px;
+  color: #999;
+  right: 15px;
+  top: 10px;
+}
+#detail-box .card-box .ad {
+  padding: 10px 15px 10px 15px;
+}
+#detail-box .card-box .ad a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+}
+#detail-box .process {
+  margin-top: 5px;
+  height: 135px;
+  background-color: #fff;
+  padding: 15px;
+}
+#detail-box .process h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+#detail-box .process div {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+#detail-box .estimate {
+  height: 103px;
+  background-color: #fff;
+  margin-top: 5px;
+  padding: 15px;
+}
+#detail-box .estimate h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+#detail-box .estimate div {
+  font-size: 14px;
+  color: #666;
+}
+#detail-box h2 {
+  margin: 0;
+  padding: 15px;
+  margin-top: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}
+#detail-box .card-box.introduce {
+  margin-top: 5px;
+  height: 180px;
+}
+#detail-box .card-box.introduce .content {
+  height: 139px;
+}
+#detail-box .card-box.introduce .footer {
+  height: 40px;
+  position: relative;
+}
+#detail-box .card-box.introduce .footer .start-time.circle::before {
+  content: '';
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: #00BCD4;
+  position: absolute;
+  right: 40px;
+  top: 5px;
+}
+#detail-box .card-box.introduce.first {
+  margin-top: 0;
+  border-top: 1px solid #F4F4F4;
+}
+#detail-box .card-box.introduce.higher {
+  height: 197px;
+}
+#detail-box .card-box.introduce.higher .content {
+  height: 155px;
+}
+#comments-box .comment-box {
+  padding-top: 17px;
+  margin-left: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #F4F4F4;
+}
+#comments-box .comment-box .comment-box-head {
+  height: 30px;
+}
+#comments-box .comment-box .comment-box-head .head-image {
+  height: 30px;
+  position: relative;
+}
+#comments-box .comment-box .comment-box-head .head-image img {
+  width: 30px;
+  display: inline-block;
+}
+#comments-box .comment-box .comment-box-head .head-image span {
+  left: 35px;
+  top: 0px;
+  position: absolute;
+  font-size: 12px;
+  color: #333;
+}
+#comments-box .comment-box .comment-box-head .head-image h3 {
+  left: 35px;
+  top: 16px;
+  position: absolute;
+  margin: 0;
+  font-size: 10px;
+  color: #999;
+  font-weight: normal;
+}
+#comments-box .comment-box .comment-box-content {
+  min-height: 60px;
+  font-size: 14px;
+  color: #333;
+  margin: 10px 10px 10px 0px;
+}
+#comments-box .comment-box .comment-box-footer .time {
+  font-size: 12px;
+  color: #999;
+}
+#comments-box .comment-box .comment-box-footer div {
+  margin-top: 0.2rem;
+  display: inline-block;
+  font-size: 12px;
+  float: right;
+  margin-right: 15px;
+}
+#comments-box .comment-box .comment-box-footer div div {
+  color: #999;
+  display: inline-block;
+}
+#comments-box .comment-box .comment-box-footer div div span {
+  color: #999;
+}
+#comments-box .comment-box .comment-box-footer div .reply {
+  margin-right: 15px;
+}
+#comments-box .comment-box .comment-box-footer div .agree {
+  margin-right: 0px;
+}
+#comments-box .comment-box .comment-box-footer div .iconfont {
+  font-size: 15px;
+  color: #999;
+  margin-right: 3px;
+}

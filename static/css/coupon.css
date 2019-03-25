@@ -1,0 +1,405 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html .header,
+body .header {
+  width: 100%;
+  height: 44px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+}
+html .header a,
+body .header a {
+  position: relative;
+  line-height: 42px;
+  display: inline-block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+}
+html .header a span,
+body .header a span {
+  visibility: hidden;
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 4px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  background-color: #00BCD4;
+}
+html .header a.active,
+body .header a.active {
+  color: #00BCD4;
+}
+html .header a.active span,
+body .header a.active span {
+  visibility: visible;
+  background-color: #00BCD4;
+}
+html .blank,
+body .blank {
+  position: relative;
+  text-align: center;
+}
+html .blank img,
+body .blank img {
+  width: 150px;
+  display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 122px;
+}
+html .blank p,
+body .blank p {
+  font-size: 14px;
+  color: #ddd;
+}
+html .not-used .coupon-box,
+body .not-used .coupon-box {
+  margin: 0 auto;
+  width: 92%;
+  height: 94px;
+  margin-top: 20px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 2px 4px rgba(216, 216, 216, 0.5);
+}
+html .not-used .coupon-box .left,
+body .not-used .coupon-box .left {
+  position: relative;
+  width: 27%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+}
+html .not-used .coupon-box .left span.num,
+body .not-used .coupon-box .left span.num {
+  display: inline-block;
+  font-size: 40px;
+  color: #00BCD4;
+  font-weight: 700;
+  margin-top: 13px;
+}
+html .not-used .coupon-box .left span.num em,
+body .not-used .coupon-box .left span.num em {
+  font-style: normal;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: -5px;
+}
+html .not-used .coupon-box .left p,
+body .not-used .coupon-box .left p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+html .not-used .coupon-box .left::before,
+body .not-used .coupon-box .left::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 96px;
+  background-color: transparent;
+  border-right: 1px dashed #E1E1E1;
+  right: 1px;
+}
+html .not-used .coupon-box .left::after,
+body .not-used .coupon-box .left::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #00BCD4;
+  border-radius: 4px 0px 0px 4px;
+  left: 0px;
+  top: 0;
+}
+html .not-used .coupon-box .center,
+body .not-used .coupon-box .center {
+  position: relative;
+  width: 55%;
+  height: 100%;
+  display: inline-block;
+  padding-left: 8%;
+}
+html .not-used .coupon-box .center .title,
+body .not-used .coupon-box .center .title {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+html .not-used .coupon-box .center .time,
+body .not-used .coupon-box .center .time {
+  color: #999;
+  font-size: 12px;
+  margin-top: 18px;
+}
+html .not-used .coupon-box .center::before,
+body .not-used .coupon-box .center::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #F4F4F4;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  transform: translate(-62%, -50%);
+  box-shadow: 0px -1px 0px rgba(216, 216, 216, 0.5) inset;
+}
+html .not-used .coupon-box .center::after,
+body .not-used .coupon-box .center::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #F4F4F4;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  transform: translate(-62%, 49%);
+}
+html .not-used .coupon-box .use-coupon,
+body .not-used .coupon-box .use-coupon {
+  margin: 0;
+  flex: 1;
+  height: 100%;
+  display: inline-block;
+  outline: none;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #00BCD4;
+  color: #fff;
+  font-size: 14px;
+}
+html .not-used .coupon-box.first,
+body .not-used .coupon-box.first {
+  margin-top: 64px;
+}
+html .used .coupon-box,
+body .used .coupon-box {
+  margin: 0 auto;
+  width: 92%;
+  height: 94px;
+  margin-top: 20px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 2px 4px rgba(216, 216, 216, 0.5);
+}
+html .used .coupon-box .left,
+body .used .coupon-box .left {
+  position: relative;
+  width: 86.3%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-left: 3.7%;
+}
+html .used .coupon-box .left .title,
+body .used .coupon-box .left .title,
+html .used .coupon-box .left .time,
+body .used .coupon-box .left .time {
+  text-align: left;
+}
+html .used .coupon-box .left .title,
+body .used .coupon-box .left .title {
+  font-size: 16px;
+  color: #333;
+  margin-top: 17px;
+}
+html .used .coupon-box .left .time,
+body .used .coupon-box .left .time {
+  font-size: 12px;
+  color: #999;
+  margin-top: 15px;
+}
+html .used .coupon-box .left .solid,
+body .used .coupon-box .left .solid {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #00BCD4;
+  border-radius: 4px 0px 0px 4px;
+  left: 0px;
+  top: 0;
+}
+html .used .coupon-box .left::before,
+body .used .coupon-box .left::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #F4F4F4;
+  left: 29.6%;
+  top: 0;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px -1px 0px rgba(216, 216, 216, 0.5) inset;
+}
+html .used .coupon-box .left::after,
+body .used .coupon-box .left::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #F4F4F4;
+  left: 29.5%;
+  bottom: 0;
+  z-index: 999;
+  transform: translate(-50%, 50%);
+}
+html .used .coupon-box .continue-watch,
+body .used .coupon-box .continue-watch {
+  margin: 0;
+  flex: 1;
+  height: 100%;
+  display: inline-block;
+  outline: none;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #00BCD4;
+  color: #fff;
+  font-size: 14px;
+}
+html .used .coupon-box.finished .left,
+body .used .coupon-box.finished .left {
+  width: 100%;
+}
+html .used .coupon-box.finished .left img,
+body .used .coupon-box.finished .left img {
+  width: 10.6%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+html .used .coupon-box.finished .left::before,
+body .used .coupon-box.finished .left::before,
+html .used .coupon-box.finished .left::after,
+body .used .coupon-box.finished .left::after {
+  left: 26.6%;
+}
+html .used .coupon-box.first,
+body .used .coupon-box.first {
+  margin-top: 64px;
+}
+html .used .coupon-box.first .left .time,
+body .used .coupon-box.first .left .time {
+  margin-top: 8px;
+}
+html .overdue .coupon-box,
+body .overdue .coupon-box {
+  margin: 0 auto;
+  width: 92%;
+  height: 94px;
+  margin-top: 20px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 2px 4px rgba(216, 216, 216, 0.5);
+}
+html .overdue .coupon-box .left,
+body .overdue .coupon-box .left {
+  position: relative;
+  width: 86.3%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-left: 3.7%;
+}
+html .overdue .coupon-box .left .title,
+body .overdue .coupon-box .left .title,
+html .overdue .coupon-box .left .time,
+body .overdue .coupon-box .left .time {
+  text-align: left;
+}
+html .overdue .coupon-box .left .title,
+body .overdue .coupon-box .left .title {
+  font-size: 16px;
+  color: #333;
+  margin-top: 17px;
+}
+html .overdue .coupon-box .left .time,
+body .overdue .coupon-box .left .time {
+  font-size: 12px;
+  color: #999;
+  margin-top: 15px;
+}
+html .overdue .coupon-box .left .solid,
+body .overdue .coupon-box .left .solid {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #00BCD4;
+  border-radius: 4px 0px 0px 4px;
+  left: 0px;
+  top: 0;
+}
+html .overdue .coupon-box .left::before,
+body .overdue .coupon-box .left::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #F4F4F4;
+  left: 29.5%;
+  top: 0;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px -1px 0px rgba(216, 216, 216, 0.5) inset;
+}
+html .overdue .coupon-box .left::after,
+body .overdue .coupon-box .left::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #F4F4F4;
+  left: 29.5%;
+  bottom: 0;
+  z-index: 999;
+  transform: translate(-50%, 50%);
+}
+html .overdue .coupon-box.finished .left,
+body .overdue .coupon-box.finished .left {
+  width: 100%;
+}
+html .overdue .coupon-box.finished .left img,
+body .overdue .coupon-box.finished .left img {
+  width: 10.6%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+html .overdue .coupon-box.finished .left::before,
+body .overdue .coupon-box.finished .left::before,
+html .overdue .coupon-box.finished .left::after,
+body .overdue .coupon-box.finished .left::after {
+  left: 26.5%;
+}
+html .overdue .coupon-box.first,
+body .overdue .coupon-box.first {
+  margin-top: 64px;
+}

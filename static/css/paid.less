@@ -1,0 +1,189 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin: 0;
+}
+.card-box{
+    height:158px;
+    background-color: #fff;
+    position: relative;
+    .content{
+        height: 138px;
+        div
+        {
+            h3{
+                margin: 0;
+                margin-top: 3px;
+            }
+            display: inline-block;
+            text-align: center;
+            span{
+                font-size: 15px;
+                color: #333333;
+            }
+            .info{
+                font-size: 12px;
+                color: #999;
+                font-weight: normal;
+            }
+            .head-box{
+                display: table-cell;
+                width: 76px;
+                height: 76px;
+                background: url("../images/frame@3x.png") no-repeat center center;
+                background-image: url("../images/frame@3x.png");
+                background-size: 76px 76px;
+                background-position: center center;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .head-box.right{
+                background-image: url(../images/frame_yellow@3x.png);
+            }
+        }
+        div.left-person{
+            position: absolute;
+            left: 15.5%;
+            top: 15%;
+            span{
+                font-weight: 700;
+            }
+        }
+        div.right-person{
+            position: absolute;
+            right: 15.5%;
+            top: 15%;
+            span{
+                font-weight: 700;
+            }
+        }
+        .center{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 27%;
+        }
+    }
+
+}
+.pay-box{
+    margin-top: 5px;
+    height: 135px;
+    background-color: #fff;
+    .title{
+        height: 46px;
+        border-bottom: 1px solid #F4F4F4;
+        h3{
+            font-size: 16px;
+            padding: 12px 0px 12px 15px;
+        }
+    }
+    .coupon,.paid-methods{
+        height: 44px;
+        div{
+            font-size: 15px;
+            padding: 12px 14px 12px 15px;
+        }
+    }
+    .coupon{
+        border-bottom:1px solid #F4F4F4;
+        div{
+            span{
+                margin-left: 3px;
+            }
+            .icon-icon_ticket{
+                vertical-align: -1.5px;
+                font-size: 18px;
+                color: #F16164;
+            }
+            .icon-icon_selected{
+                float: right;
+                font-size: 20px;
+                color: #00BCD4
+            }
+            .icon-icon_unselected{
+                float: right;
+                font-size: 20px;
+                color: #ccc;
+            }
+            .num{
+                font-style: normal;
+                color: #999;
+            }
+        }
+    }
+    .paid-methods{
+        height: 45px;
+        div{
+            span{
+                margin-left: 3px;
+            }
+            .icon-icon_wechat{
+                font-size: 18px;
+                color: #24AF41;
+                vertical-align: -1.5px;
+            }
+            .icon-icon_selected{
+                float: right;
+                font-size: 20px;
+                color: #00BCD4
+            }
+            .icon-icon_unselected{
+                float: right;
+                font-size: 20px;
+                color: #ccc;
+            }
+
+        }
+    }
+    
+}
+.operate{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    .money,.confirm{
+        position: relative;
+        flex: 1;
+        text-align: center;
+        span.paid-now{
+            cursor: pointer;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 14px;
+        }
+    }
+    .money {
+        background-color: #fff;
+        span{
+        position: absolute;
+        left: 8%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #333;
+        font-size: 16px;
+        em{
+            color: #00BCD4;
+            font-style: normal;
+            font-weight: 700;
+        }
+        }
+    }
+    .confirm{
+        background-color: #00BCD4;
+        span{
+            font-size: 18px;
+            color: #fff;
+        }
+        
+    }
+}

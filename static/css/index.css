@@ -1,0 +1,621 @@
+html,
+body {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 0;
+}
+html ul,
+body ul,
+html li,
+body li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+html p,
+body p {
+  margin: 0;
+  padding: 0;
+}
+html a,
+body a {
+  text-decoration: none;
+  color: #333;
+}
+html .def,
+body .def {
+  width: 156px;
+  height: 12px;
+  margin: 0px auto;
+  background: url("../images/def_end.png") no-repeat;
+  background-size: 156px 12px;
+}
+html .swiper-container,
+body .swiper-container {
+  width: 100%;
+  height: 120px;
+  margin-top: 13px;
+}
+html .swiper-container .swiper-pagination-bullet,
+body .swiper-container .swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: 1;
+}
+html .swiper-container .swiper-pagination-bullet-active,
+body .swiper-container .swiper-pagination-bullet-active {
+  width: 15px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+  opacity: 1;
+}
+html .swiper-container .swiper-pagination-bullet,
+body .swiper-container .swiper-pagination-bullet {
+  margin: 0 2.5px !important;
+  margin-top: 10px !important;
+}
+html .swiper-container .swiper-pagination.swiper-pagination-bullets,
+body .swiper-container .swiper-pagination.swiper-pagination-bullets {
+  bottom: 2px !important;
+}
+html .flow,
+body .flow {
+  overflow: hidden;
+}
+html header,
+body header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed
+        ;
+  z-index: 999;
+  padding-top: 8px;
+}
+html header .search,
+body header .search {
+  background-color: #fff;
+  width: 100%;
+  height: 2rem;
+  position: relative;
+  text-align: center;
+}
+html header .search .searchbox,
+body header .search .searchbox {
+  height: 1.875rem;
+  border: none;
+  background-color: #F5F5F5;
+  width: 92.5%;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+html header .search .searchbox-active,
+body header .search .searchbox-active {
+  width: 80%;
+  text-align: left;
+  padding-left: 1.8rem;
+}
+html header .search .searchbox-active .icon-bar_icon_search,
+body header .search .searchbox-active .icon-bar_icon_search {
+  left: 0;
+}
+html header .search .icon-bar_icon_search,
+body header .search .icon-bar_icon_search {
+  color: #999;
+  font-size: 0.9375rem;
+  position: absolute;
+  left: 32%;
+  top: 50%;
+  transform: translateY(-0.455rem);
+}
+html header .search .icon-bar_icon_search.active,
+body header .search .icon-bar_icon_search.active {
+  color: #999;
+  font-size: 0.9375rem;
+  position: absolute;
+  left: 0.9rem;
+}
+html header .search .cancel,
+body header .search .cancel {
+  vertical-align: -2px;
+  font-size: 1rem;
+  color: #333;
+  margin-left: 2px;
+}
+html header .search-mask,
+body header .search-mask {
+  background-color: #fff;
+  padding: 15px;
+}
+html header .search-mask h3,
+body header .search-mask h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+html header .search-mask span,
+body header .search-mask span {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  padding: 6px 18px;
+  border-radius: 16px;
+  background-color: #F5F5F5;
+  margin-bottom: 12px;
+}
+html header .search-mask .hot,
+body header .search-mask .hot {
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 12px;
+}
+html header .search-mask .history,
+body header .search-mask .history {
+  position: relative;
+  margin-top: 15px;
+}
+html header .search-mask .history .icon-icon_delete,
+body header .search-mask .history .icon-icon_delete {
+  position: absolute;
+  font-size: 15px;
+  right: 0;
+  top: -1px;
+}
+html header .selected-box,
+body header .selected-box {
+  height: 39px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333333;
+  display: flex;
+  justify-content: space-around;
+  line-height: 39px;
+}
+html header .selected-box span .icon,
+body header .selected-box span .icon {
+  margin-bottom: 1px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  background: url('../images/icon_drop@3x.png') no-repeat;
+  background-size: contain;
+}
+html header .selected-box span.active,
+body header .selected-box span.active {
+  color: #00BCD4;
+}
+html header .selected-box span.active .icon,
+body header .selected-box span.active .icon {
+  background: url('../images/icon_drop_active.png') no-repeat;
+  background-size: contain;
+}
+html .selected-mask,
+body .selected-mask {
+  width: 100%;
+  top: 88px;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+html .selected-mask .all,
+body .selected-mask .all {
+  background-color: #fff;
+  height: 400px;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-top: 7px;
+  overflow: auto;
+}
+html .selected-mask .all .city-list,
+body .selected-mask .all .city-list {
+  display: block;
+}
+html .selected-mask .all .city-list h3,
+body .selected-mask .all .city-list h3 {
+  color: #00BCD4;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 11px;
+  padding-left: 15px;
+}
+html .selected-mask .all .city-list .city-letter,
+body .selected-mask .all .city-list .city-letter {
+  display: inline-block;
+  padding-left: 24px;
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 11px;
+}
+html .selected-mask .all .city-list p,
+body .selected-mask .all .city-list p {
+  font-size: 14px;
+  width: 60px;
+  text-align: center;
+  margin-bottom: 21px;
+  color: #333;
+}
+html .selected-mask .all .city-list p.active,
+body .selected-mask .all .city-list p.active {
+  color: #00BCD4;
+}
+html .selected-mask .all .letter,
+body .selected-mask .all .letter {
+  display: inline-block;
+  position: fixed;
+  right: 10px;
+  top: 100px;
+}
+html .selected-mask .all .letter ul li,
+body .selected-mask .all .letter ul li {
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  line-height: 14px;
+  text-align: center;
+}
+html .selected-mask .all .letter ul li a,
+body .selected-mask .all .letter ul li a {
+  font-size: 11px;
+}
+html .selected-mask .all .letter ul li.active,
+body .selected-mask .all .letter ul li.active {
+  border-radius: 50%;
+  background-color: #00BCD4;
+}
+html .selected-mask .job,
+body .selected-mask .job {
+  background-color: #fff;
+  height: 367px;
+  overflow: hidden;
+}
+html .selected-mask .job .content,
+body .selected-mask .job .content {
+  display: flex;
+  border-bottom: 1px solid #F4F4F4;
+}
+html .selected-mask .job .content .level-one,
+body .selected-mask .job .content .level-one,
+html .selected-mask .job .content .level-two,
+body .selected-mask .job .content .level-two,
+html .selected-mask .job .content .level-three,
+body .selected-mask .job .content .level-three {
+  height: 320px;
+}
+html .selected-mask .job .content .level-one,
+body .selected-mask .job .content .level-one {
+  width: 25%;
+  display: inline-block;
+}
+html .selected-mask .job .content .level-one .level-one-list div,
+body .selected-mask .job .content .level-one .level-one-list div {
+  height: 34px;
+  width: 100%;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+}
+html .selected-mask .job .content .level-one .level-one-list div.active,
+body .selected-mask .job .content .level-one .level-one-list div.active {
+  color: #00BCD4;
+  border-left: 3px solid #00BCD4;
+}
+html .selected-mask .job .content .level-two,
+body .selected-mask .job .content .level-two {
+  width: 37.5%;
+  display: inline-block;
+  background-color: #F9F9F9;
+}
+html .selected-mask .job .content .level-two div,
+body .selected-mask .job .content .level-two div {
+  height: 34px;
+  width: 100%;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+}
+html .selected-mask .job .content .level-two div.active,
+body .selected-mask .job .content .level-two div.active {
+  color: #00BCD4;
+}
+html .selected-mask .job .content .level-three,
+body .selected-mask .job .content .level-three {
+  flex: 1;
+  display: inline-block;
+  background-color: #F9F9F9;
+  border-left: 1px solid #F5F5F5;
+}
+html .selected-mask .job .content .level-three div,
+body .selected-mask .job .content .level-three div {
+  height: 34px;
+  width: 100%;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+}
+html .selected-mask .job .content .level-three div.active,
+body .selected-mask .job .content .level-three div.active {
+  color: #00BCD4;
+}
+html .selected-mask .job .reset,
+body .selected-mask .job .reset {
+  position: relative;
+  height: 44px;
+}
+html .selected-mask .job .reset span,
+body .selected-mask .job .reset span {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14;
+  color: #00BCD4;
+}
+html .selected-mask .filter,
+body .selected-mask .filter {
+  overflow: hidden;
+  background-color: #F9F9F9;
+}
+html .selected-mask .filter .content,
+body .selected-mask .filter .content {
+  height: 299px;
+  padding-left: 15px;
+  overflow: hidden;
+}
+html .selected-mask .filter .content h3,
+body .selected-mask .filter .content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #333333;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+html .selected-mask .filter .content .condition,
+body .selected-mask .filter .content .condition {
+  margin-top: 28px;
+}
+html .selected-mask .filter .content .condition span,
+body .selected-mask .filter .content .condition span {
+  margin-right: 15px;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  padding: 5px 15px;
+}
+html .selected-mask .filter .content .condition span.active,
+body .selected-mask .filter .content .condition span.active {
+  color: #fff;
+  background-color: #00BCD4;
+}
+html .selected-mask .filter .operate,
+body .selected-mask .filter .operate {
+  height: 45px;
+  display: flex;
+}
+html .selected-mask .filter .operate .reset,
+body .selected-mask .filter .operate .reset,
+html .selected-mask .filter .operate .confirm,
+body .selected-mask .filter .operate .confirm {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+html .selected-mask .filter .operate .reset span,
+body .selected-mask .filter .operate .reset span,
+html .selected-mask .filter .operate .confirm span,
+body .selected-mask .filter .operate .confirm span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
+html .selected-mask .filter .operate .reset,
+body .selected-mask .filter .operate .reset {
+  background-color: #fff;
+}
+html .selected-mask .filter .operate .reset span,
+body .selected-mask .filter .operate .reset span {
+  color: #00BCD4;
+}
+html .selected-mask .filter .operate .confirm,
+body .selected-mask .filter .operate .confirm {
+  background-color: #00BCD4;
+}
+html .selected-mask .filter .operate .confirm span,
+body .selected-mask .filter .operate .confirm span {
+  color: #fff;
+}
+html .content-box,
+body .content-box {
+  padding-bottom: 50px;
+  overflow: auto;
+  padding-top: 211px;
+}
+html .content-box .card-box,
+body .content-box .card-box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 180px;
+  background-color: #fff;
+  position: relative;
+}
+html .content-box .card-box .viewer,
+body .content-box .card-box .viewer {
+  position: absolute;
+  display: inline-block;
+  font-size: 10px;
+  color: #fff;
+  width: 53px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  background: url('../images/home_ic_want@3x.png') no-repeat;
+  background-size: 53px 18px;
+  right: 15px;
+}
+html .content-box .card-box .content,
+body .content-box .card-box .content {
+  height: 138px;
+  border-bottom: 1px solid #F5F5F5;
+}
+html .content-box .card-box .content div,
+body .content-box .card-box .content div {
+  display: inline-block;
+  text-align: center;
+}
+html .content-box .card-box .content div span,
+body .content-box .card-box .content div span {
+  font-size: 15px;
+  color: #333333;
+}
+html .content-box .card-box .content div .info,
+body .content-box .card-box .content div .info {
+  margin: 0;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+  width: 100px;
+}
+html .content-box .card-box .content div .head-box,
+body .content-box .card-box .content div .head-box {
+  display: table-cell;
+  width: 100px;
+  height: 76px;
+  background: url("../images/frame@3x.png") no-repeat center center;
+  background-image: url("../images/frame@3x.png");
+  background-size: 76px 76px;
+  background-position: center center;
+  text-align: center;
+  vertical-align: middle;
+}
+html .content-box .card-box .content div .head-box.right,
+body .content-box .card-box .content div .head-box.right {
+  background-image: url(../images/frame_yellow@3x.png);
+}
+html .content-box .card-box .content div.left-person,
+body .content-box .card-box .content div.left-person {
+  position: absolute;
+  left: 9.5%;
+  top: 7%;
+}
+html .content-box .card-box .content div.left-person span,
+body .content-box .card-box .content div.left-person span {
+  font-weight: 700;
+}
+html .content-box .card-box .content div.right-person,
+body .content-box .card-box .content div.right-person {
+  position: absolute;
+  right: 9.5%;
+  top: 7%;
+}
+html .content-box .card-box .content div.right-person span,
+body .content-box .card-box .content div.right-person span {
+  font-weight: 700;
+}
+html .content-box .card-box .content .center,
+body .content-box .card-box .content .center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 22%;
+}
+html .content-box .card-box .content .center button,
+body .content-box .card-box .content .center button {
+  background-color: #fff;
+  display: block;
+  width: 61px;
+  height: 25px;
+  line-height: 23.5px;
+  border-radius: 14px;
+  color: #25CAE3;
+  font-size: 14px;
+  border: 1px solid #25CAE3;
+  margin-top: 13px;
+}
+html .content-box .card-box .footer,
+body .content-box .card-box .footer {
+  position: relative;
+}
+html .content-box .card-box .footer .tips,
+body .content-box .card-box .footer .tips {
+  display: inline-block;
+  width: 92%;
+  height: 20px;
+  margin-top: 9px;
+  font-size: 14px;
+  color: #333;
+  margin-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .content-box .card-box .footer .start-time,
+body .content-box .card-box .footer .start-time {
+  position: absolute;
+  font-size: 12px;
+  color: #999;
+  right: 15px;
+  top: 10px;
+}
+html .content-box .card-box.higher,
+body .content-box .card-box.higher {
+  height: 197px;
+}
+html .content-box .card-box.higher .content,
+body .content-box .card-box.higher .content {
+  height: 155px;
+}
+html .footer,
+body .footer {
+  width: 100%;
+  bottom: 0;
+}
+html .footer nav,
+body .footer nav {
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  background-color: #fff;
+  border-bottom: 1px solid #E1E1E1;
+  border-top: 1px solid #E1E1E1;
+}
+html .footer nav a,
+body .footer nav a {
+  text-align: center;
+  color: #333;
+  font-size: 10px;
+}
+html .footer nav a .label,
+body .footer nav a .label {
+  text-align: center;
+  font-size: 10px;
+}
+html .footer nav a.active,
+body .footer nav a.active {
+  color: #00BCD4;
+}
+html .footer .iconfont,
+body .footer .iconfont {
+  font-size: 24px;
+  margin-top: 7px;
+}

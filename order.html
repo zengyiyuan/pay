@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单</title>
+    <link rel="stylesheet" href="static/css/order.css">
+</head>
+<body>
+    <div class="header">
+        <a class="all active">全部
+            <span></span>
+        </a>
+        <a class="wait-pay">待支付
+            <span></span>
+        </a>
+        <a class="wait-watch">待观摩 
+            <span></span>
+        </a>
+        <a class="finished">已完成
+            <span></span>
+        </a>
+    </div>
+    <div class="blank" style="display: none">
+        <img src="static/images/default_order@3x.png" alt="">
+        <p>亲，还没有相关订单哦～</p>
+    </div>
+    <div class="content-container">
+        <div class="all">
+            <div class="order-box" >
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">待支付</span>
+                </div>
+                <div class="card-box">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>韩超</span>
+                                        <h3 class="info">华为主管</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">毕业生</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                    <div class="operate">
+                        <button class="cancel">取消订单</button>
+                        <button class="pay">立即支付</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-box">
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">已关闭</span>
+                </div>
+                <div class="card-box higher">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>罗腾</span>
+                                        <h3 class="info">焦点科技股份有限公司运营总监</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">毕业生</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                </div>
+            </div>
+            <div class="order-box" data-status="paid">
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">待观摩</span>
+                </div>
+                <div class="card-box" data-status="paid">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>韩超</span>
+                                        <h3 class="info">华为主管</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">毕业生</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                    <div class="operate">
+                        <button class="watch-now">立即观摩</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-box">
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">观摩中</span>
+                </div>
+                <div class="card-box" data-status="paid">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>韩超</span>
+                                        <h3 class="info">华为主管</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">毕业生</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                    <div class="operate">
+                        <button class="watch-now">立即观摩</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-box">
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">已完成</span>
+                </div>
+                <div class="card-box" data-status="paid">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>韩超</span>
+                                        <h3 class="info">华为主管</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">毕业生</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                    <div class="operate">
+                        <button class="watch-now">立即观摩</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-box">
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">已完成</span>
+                </div>
+                <div class="card-box">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>韩超</span>
+                                        <h3 class="info">华为主管</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">毕业生</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                    <div class="operate">
+                        <button class="evaluate">立即评价</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wait-pay" style="display: none">
+            <div class="order-box first">
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">待支付</span>
+                </div>
+                <div class="card-box">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>韩超</span>
+                                        <h3 class="info">华为主管</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">毕业生</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                    <div class="operate">
+                        <button class="cancel">取消订单</button>
+                        <button class="pay">立即支付</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div class="wait-watch" style="display: none">
+            <div class="order-box first">
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">待观摩</span>
+                </div>
+                <div class="card-box" data-status="paid">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>韩超</span>
+                                        <h3 class="info">华为主管</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">毕业生</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                    <div class="operate">
+                        <button class="watch-now">立即观摩</button>
+                    </div>
+                </div>
+        </div>
+        <div class="order-box" data-status="paid">
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">观摩中</span>
+                </div>
+                <div class="card-box">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>韩超</span>
+                                        <h3 class="info">华为主管</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">苏宁前端工程师</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                    <div class="operate">
+                        <button class="watch-now">立即观摩</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div class="finished" style="display: none">
+            <div class="order-box first">
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">已完成</span>
+                </div>
+                <div class="card-box" data-status="paid">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>韩超</span>
+                                        <h3 class="info">华为主管</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">毕业生</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                    <div class="operate">
+                        <button class="watch-now">立即观摩</button>
+                    </div>
+                </div>
+        </div>
+        <div class="order-box">
+                <div class="title">
+                    <span class="order-num">订单编号：201809203245690</span>
+                    <span class="status">已完成</span>
+                </div>
+                <div class="card-box">
+                        <div class="content">
+                                <div class="left-person">
+                                        <div class="head-box">
+                                            <image class="photo" style="width: 58px;vertical-align: middle;"src="static/images/avatar1@3x.png">	
+                                            </image>
+                                        </div>
+                                        <span>韩超</span>
+                                        <h3 class="info">华为主管</h3>
+                                    </div>
+                                    <div class="center">
+                                            <div>
+                                            <image class="" src="static/images/recipe@2x.png"style="width:54px;display: block">	
+                                            </image>
+                                            <span class="info">前端工程师</span>
+                                            </div>
+                                    </div>
+                                    <div class="right-person">
+                                        <div class="head-box right">
+                                            <image src="static/images/avatar2@3x.png"style="width: 58px;vertical-align:middle;">
+                                            </image>
+                                        </div>
+                                        <span>唐秀英</span>
+                                        <h3 class="info">苏宁前端工程师</h3>
+                                    </div>
+                        </div>
+                </div>
+                <div class="footer">
+                    <span class="time">2018-09-26 10:30</span>
+                    <div class="operate">
+                        <button class="evaluate">立即评价</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+<script src="static/js/zepto.min.js"></script>
+<script>
+    $(function(){
+        $('.header a').click(function(){
+            var className = this.classList[0];
+            console.log(className);
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.content .'+className).show().siblings().hide()
+        })
+        $('button.pay').click(function(){
+            window.location.href="paid.html"
+        })
+        $('.card-box').click(function(){
+            console.log(this.dataset);
+            if(this.dataset.status&&this.dataset.status==='paid'){
+                window.location.href="paidwatch.html"
+            }else{
+                window.location.href="watch.html"
+            }
+        })
+        $('.left-person').click(function(e){
+            e.stopPropagation()
+             window.location.href="interviewer.html"
+        })
+        $('.right-person').click(function(e){
+            e.stopPropagation()
+            window.location.href="interviewee.html"
+        })
+        $('.operate .cancel').click(function(){
+            console.dir(this.parentNode.parentNode.parentNode.childNodes[1].lastElementChild.innerHTML)//先获取此订单信息
+            this.parentNode.parentNode.parentNode.childNodes[1].lastElementChild.innerHTML="已关闭"
+            this.parentNode.remove()
+        })
+        $('.operate .watch-now').click(function(){
+            window.location.href="paidwatch.html"
+        })
+        $('.operate .evaluate').click(function(){
+            window.location.href="evaluate.html"
+        })
+    })
+</script>
+</html>
